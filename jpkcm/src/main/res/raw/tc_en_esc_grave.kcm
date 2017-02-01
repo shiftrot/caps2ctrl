@@ -1,0 +1,80 @@
+type OVERLAY
+
+# AKC (Android 4.1 and up)
+# https://android.googlesource.com/platform/frameworks/base/+/jb-release/include/androidfw/KeycodeLabels.h
+# { "SWITCH_CHARSET", 95 },
+# { "LANGUAGE_SWITCH", 204 },
+# { "ZENKAKU_HANKAKU", 211 },
+# { "EISU", 212 },
+# { "MUHENKAN", 213 },
+# { "HENKAN", 214 },
+# { "KATAKANA_HIRAGANA", 215 },
+# { "YEN", 216 },
+# { "RO", 217 },
+# { "KANA", 218 },
+key ZENKAKU_HANKAKU {
+    base:                               fallback ZENKAKU_HANKAKU
+    shift:                              '~'
+    alt:                                fallback SWITCH_CHARSET
+}
+
+# ESC
+map key 1 GRAVE # ESCAPE
+
+# GRAVE
+map key 41 ESCAPE # GRAVE
+
+# Caps
+map key 58 CTRL_LEFT # CAPS_LOCK
+
+# Ctrl
+# map key 29 # CTRL_LEFT
+# map key 97 # CTRL_RIGHT
+
+# Japanese
+# map key 85 # ZENKAKU_HANKAKU
+# map key 90 # KEY_KATAKANA
+# map key 91 # KEY_HIRAGANA
+map key 92  CTRL_RIGHT      # HENKAN
+map key 93  ZENKAKU_HANKAKU # KATAKANA_HIRAGANA
+map key 94  CTRL_LEFT       # MUHENKAN
+map key 122 ZENKAKU_HANKAKU # KANA
+map key 123 CTRL_LEFT       # EISU
+map key 204 ZENKAKU_HANKAKU
+# map key 368 # KEY_LANGUAGE
+
+# META (Windows, Command)
+map key 125 HOME # META_LEFT
+# map key 126 HOME # META_RIGHT
+
+# ALT
+# key 56  # ALT_LEFT
+# key 100 # ALT_RIGHT
+
+# MENU
+map key 127 CAPS_LOCK # MENU
+
+# HOME
+# map key 172 # HOME
+
+# Japanese Keyboard Only
+
+# YEN -> GRAVE
+key YEN {
+    label:                              '`'
+    base:                               '`'
+    shift:                              '~'
+}
+
+# key BACKSLASH {
+#     label:                              '\u00a5'
+#     base:                               '\u00a5'
+#     shift:                              '|'
+# }
+
+key RO {
+    label:                              '\u00a5'
+    base:                               '\u00a5'
+    shift:                              '_'
+}
+

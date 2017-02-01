@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">日本語キーボードレイアウト+親指Ctrl</string>
+    <string name="keyboard_layouts_label">日本語キーボード+親指Ctrl</string>
+    <string name="keyboard_layout_en_hz">英語配列([半/全])</string>
+    <string name="keyboard_layout_en_esc_grave">英語配列([ESC]-[`])</string>
+    <string name="keyboard_layout_en_esc_hz">英語配列([ESC]-[半/全])</string>
+    <string name="keyboard_layout_tc_en">親指CTRL(英語配列)</string>
+    <string name="keyboard_layout_tc_en_hz">親指CTRL(英語配列) ([半/全])</string>
+    <string name="keyboard_layout_tc_en_esc_grave">親指CTRL(英語配列) ([ESC]-[`])</string>
+    <string name="keyboard_layout_tc_en_esc_hz">親指CTRL(英語配列) ([ESC]-[半/全])</string>
+    <string name="keyboard_layout_ja">日本語配列</string>
+    <string name="keyboard_layout_ja_esc_hz">日本語配列 ([ESC]-[半/全])</string>
+    <string name="keyboard_layout_tc_ja">親指CTRL(日本語配列)</string>
+    <string name="keyboard_layout_tc_ja_esc_hz">親指CTRL(日本語配列) ([ESC]-[半/全])</string>
+    <string name="keyboard_layout_tc_ja_oadg">親指CTRL(日本語配列OADG)</string>
+    <string name="keyboard_layout_tc_custom">親指CTRL(カスタム)</string>
+</resources>
