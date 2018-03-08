@@ -17,6 +17,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        flavorDimensions "default"
+        main {
+            dimension "default"
+        }
+        tcen {
+            dimension "default"
+            setApplicationId("jp.kcm.thumbctrl.en.layout")
+        }
+    }
 }
 
 dependencies {

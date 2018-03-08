@@ -18,8 +18,6 @@ key ZENKAKU_HANKAKU {
     alt:                                fallback SWITCH_CHARSET
 }
 
-# https://android.googlesource.com/platform/frameworks/base/+/cd92588/data/keyboards/Generic.kl
-
 # ESC
 # map key 1 # ESCAPE
 
@@ -27,7 +25,7 @@ key ZENKAKU_HANKAKU {
 # map key 41 # GRAVE
 
 # Caps
-map key 58 CTRL_LEFT # CAPS_LOCK
+map key 58 ZENKAKU_HANKAKU # CAPS_LOCK
 
 # Ctrl
 # map key 29 # CTRL_LEFT
@@ -37,12 +35,12 @@ map key 58 CTRL_LEFT # CAPS_LOCK
 # map key 85 # ZENKAKU_HANKAKU
 # map key 90 # KEY_KATAKANA
 # map key 91 # KEY_HIRAGANA
-map key 92  HENKAN          # HENKAN
+map key 92  CTRL_RIGHT      # HENKAN
 map key 93  ZENKAKU_HANKAKU # KATAKANA_HIRAGANA
-map key 94  MUHENKAN        # MUHENKAN
-map key 122 KANA            # KANA
-map key 123 EISU            # EISU
-map key 204 ZENKAKU_HANKAKU #
+map key 94  CTRL_LEFT       # MUHENKAN
+map key 122 ZENKAKU_HANKAKU # KANA
+map key 123 CTRL_LEFT       # EISU
+map key 204 ZENKAKU_HANKAKU
 # map key 368 # KEY_LANGUAGE
 
 # META (Windows, Command)
@@ -54,7 +52,7 @@ map key 125 HOME # META_LEFT
 # key 100 # ALT_RIGHT
 
 # MENU
-# map key 127 CAPS_LOCK # MENU
+map key 127 CAPS_LOCK # MENU
 
 # HOME
 # map key 172 # HOME

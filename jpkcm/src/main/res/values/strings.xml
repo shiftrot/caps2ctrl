@@ -2,13 +2,6 @@
 <resources>
     <string name="app_name">Japanese Keyboard Layout+ThumbCtrl</string>
     <string name="keyboard_layouts_label">Japanese Keyboard+ThumbCtrl</string>
-    <string name="keyboard_layout_en_hz">US ([H/Z])</string>
-    <string name="keyboard_layout_en_esc_grave">US ([ESC]-[`])</string>
-    <string name="keyboard_layout_en_esc_hz">US ([ESC]-[H/Z])</string>
-    <string name="keyboard_layout_tc_en">ThumbCtrl(US)</string>
-    <string name="keyboard_layout_tc_en_hz">ThumbCtrl(US) ([H/Z])</string>
-    <string name="keyboard_layout_tc_en_esc_grave">ThumbCtrl(US) ([ESC]-[`])</string>
-    <string name="keyboard_layout_tc_en_esc_hz">ThumbCtrl(US) ([ESC]-[H/Z])</string>
 
     <string name="keyboard_layout_ja">Japanese</string>
     <string name="keyboard_layout_ja_esc_hz">Japanese ([ESC]-[H/Z])</string>

@@ -79,6 +79,7 @@ public class Main extends AppCompatActivity {
         }
 
         String html = "tcja.ja.html";
+        if (!BuildConfig.APPLICATION_ID.equals("jp.kcm.thumbctrl")) html = "tcen.ja.html";
         mWebView.loadUrl("file:///android_asset/"+html);
     }
 

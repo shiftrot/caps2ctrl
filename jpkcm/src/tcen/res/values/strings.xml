@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ThumbCtrl</string>
+    <string name="keyboard_layouts_label">ThumbCtrl</string>
+
+    <string name="keyboard_layout_en">US</string>
+    <string name="keyboard_layout_en_hz">US [H/Z]</string>
+
+    <string name="keyboard_layout_en_esc_grave">US [ESC]-[`]</string>
+    <string name="keyboard_layout_en_esc_hz">US [ESC]-[H/Z]</string>
+
+    <string name="keyboard_layout_en_caps">US [Caps]=[H/Z]</string>
+    <string name="keyboard_layout_en_esc_grave_caps">US [Caps]=[H/Z] [ESC]-[`]</string>
+
+    <string name="keyboard_layout_tc_en">ThumbCtrl(US)</string>
+    <string name="keyboard_layout_tc_en_hz">ThumbCtrl(US) [H/Z]</string>
+
+    <string name="keyboard_layout_tc_en_esc_grave">ThumbCtrl(US) [ESC]-[`]</string>
+    <string name="keyboard_layout_tc_en_esc_hz">ThumbCtrl(US) [ESC]-[H/Z]</string>
+
+    <string name="keyboard_layout_tc_en_caps">ThumbCtrl(US) [Caps]=[H/Z]</string>
+    <string name="keyboard_layout_tc_en_esc_grave_caps">ThumbCtrl(US) [Caps]=[H/Z] [ESC]-[H/Z]</string>
+</resources>

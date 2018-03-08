@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard-layouts xmlns:android="http://schemas.android.com/apk/res/android">
+    <keyboard-layout android:name="keyboard_layout_en"
+            android:label="@string/keyboard_layout_en"
+            android:keyboardLayout="@raw/en" />
+    <keyboard-layout android:name="keyboard_layout_en_hz"
+            android:label="@string/keyboard_layout_en_hz"
+            android:keyboardLayout="@raw/en_hz" />
+
+    <keyboard-layout android:name="keyboard_layout_en_esc_hz"
+            android:label="@string/keyboard_layout_en_esc_hz"
+            android:keyboardLayout="@raw/en_esc_hz" />
+    <keyboard-layout android:name="keyboard_layout_en_esc_grave"
+            android:label="@string/keyboard_layout_en_esc_grave"
+            android:keyboardLayout="@raw/en_esc_grave" />
+
+    <keyboard-layout android:name="keyboard_layout_en_caps"
+            android:label="@string/keyboard_layout_en_caps"
+            android:keyboardLayout="@raw/en_caps" />
+    <keyboard-layout android:name="keyboard_layout_en_esc_grave_caps"
+            android:label="@string/keyboard_layout_en_esc_grave_caps"
+            android:keyboardLayout="@raw/en_esc_grave_caps" />
+
+    <keyboard-layout android:name="keyboard_layout_tc_en"
+            android:label="@string/keyboard_layout_tc_en"
+            android:keyboardLayout="@raw/tc_en" />
+    <keyboard-layout android:name="keyboard_layout_tc_en_hz"
+            android:label="@string/keyboard_layout_tc_en_hz"
+            android:keyboardLayout="@raw/tc_en_hz" />
+
+    <keyboard-layout android:name="keyboard_layout_tc_en_esc_grave"
+            android:label="@string/keyboard_layout_tc_en_esc_grave"
+            android:keyboardLayout="@raw/tc_en_esc_grave" />
+    <keyboard-layout android:name="keyboard_layout_tc_en_esc_hz"
+            android:label="@string/keyboard_layout_tc_en_esc_hz"
+            android:keyboardLayout="@raw/tc_en_esc_hz" />
+
+    <keyboard-layout android:name="keyboard_layout_tc_en_caps"
+            android:label="@string/keyboard_layout_tc_en_caps"
+            android:keyboardLayout="@raw/tc_en_caps" />
+    <keyboard-layout android:name="keyboard_layout_tc_en_esc_grave_caps"
+            android:label="@string/keyboard_layout_tc_en_esc_grave_caps"
+            android:keyboardLayout="@raw/tc_en_esc_grave_caps" />
+</keyboard-layouts>
