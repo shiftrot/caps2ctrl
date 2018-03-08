@@ -9,10 +9,13 @@
     <string name="keyboard_layout_tc_en_hz">ThumbCtrl(US) ([H/Z])</string>
     <string name="keyboard_layout_tc_en_esc_grave">ThumbCtrl(US) ([ESC]-[`])</string>
     <string name="keyboard_layout_tc_en_esc_hz">ThumbCtrl(US) ([ESC]-[H/Z])</string>
+
     <string name="keyboard_layout_ja">Japanese</string>
     <string name="keyboard_layout_ja_esc_hz">Japanese ([ESC]-[H/Z])</string>
     <string name="keyboard_layout_tc_ja">ThumbCtrl(Ja)</string>
     <string name="keyboard_layout_tc_ja_esc_hz">ThumbCtrl(Ja) ([ESC]-[H/Z])</string>
+    <string name="keyboard_layout_tc_ja_caps">ThumbCtrl(Ja) (Caps=[H/Z])</string>
+    <string name="keyboard_layout_tc_ja_caps_esc_hz">ThumbCtrl(Ja) (Caps=[H/Z]) ([ESC]-[H/Z])</string>
     <string name="keyboard_layout_tc_ja_oadg">ThumbCtrl(Ja) (OADG)</string>
     <string name="keyboard_layout_tc_custom">ThumbCtrl (custom)</string>
 </resources>
