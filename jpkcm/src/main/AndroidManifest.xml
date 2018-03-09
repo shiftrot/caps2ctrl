@@ -6,6 +6,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:hardwareAccelerated="true"
         android:theme="@style/AppTheme">
 
         <receiver android:name=".InputDeviceReceiver"
@@ -16,6 +17,13 @@
             <meta-data android:name="android.hardware.input.metadata.KEYBOARD_LAYOUTS"
                        android:resource="@xml/keyboard_layouts" />
         </receiver>
+
+        <activity android:name=".Main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
