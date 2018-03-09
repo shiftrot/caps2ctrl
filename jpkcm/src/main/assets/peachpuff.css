@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* super pre */
+.Comment { color: #608080; }
+.Constant { color: #c00058; }
+.Directory { color: #0000ff; }
+.Error { color: #ffffff; background-color: #ff0000; font-weight: bold; }
+.FoldColumn { color: #000080; background-color: #cccccc; }
+.Folded { color: #000000; background-color: #ccc; }
+.Identifier { color: #008080; }
+.Ignore { color: #ffdab9; }
+.LineNr { color: #cd0000; }
+.lnr { color: #cd0000; }
+.NonText { color: #0000ff; font-weight: bold; }
+.Normal { color: #000000; }
+.PreProc { color: #cd00cd; }
+.Question { color: #2e8b57; font-weight: bold; }
+.SignColumn { color: #000080; background-color: #c0c0c0; }
+.Special { color: #6a5acd; }
+.SpecialKey { color: #0000ff; }
+.Statement { color: #804040; font-weight: bold; }
+.Title { color: #cd1076; font-weight: bold; }
+.Todo { color: #0000ff; background-color: #ffff00; }
+.Type { color: #2e8b57; font-weight: bold; }
+.Underlined { color: #6a5acd; text-decoration: underline; }
+.WarningMsg { color: #ff0000; font-weight: bold; }
+

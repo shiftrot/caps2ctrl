@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="md2html" />
+<meta name="description" content="D:/usr/Sync/Dropbox/android/ThumbCtrl/jpkcm/src/main/assets/index.txt" />
+<title> 概要: </title>
+<link rel="stylesheet" type="text/css" href="md2html.css" />
+</head>
+<body class="mainIndex double-l">
+<div id="header"><p class="siteName"><a href="" title="Toplink">Md2html</a></p><p class="description">D:/usr/Sync/Dropbox/android/ThumbCtrl/jpkcm/src/main/assets/index.txt</p></div>
+<div id="content"><div id="main">
+<div class="section entry" id="e1"><h1><a href="#t1" title="t1" name="t1" id="t1">■ 概要:</a></h1>
+<div class="textBody">
+
+<p>Android端末にBluetooth等で106/109日本語ハードウェアキーボードを接続した場合でも、デフォルトでは英語配列として扱われます。(@等の記号が刻印どおり入力できません)<br />
+本アプリは日本語キーボード用に日本語配列レイアウトを追加します。<br />
+また親指でCtrlキーを使用するために、[変換]/[無変換]/[CapsLock]を[Ctrl]へ置換した日本語配列も追加しています。<br />
+※親指シフトやかな入力を実現するためのものではありません。</p>
+
+<p>追加される日本語レイアウトの変更部分は以下のとおりです。</p>
+
+<table><tr><th>[ESC] - [半/全] </th><th>[CapLock] </th><th>[変換] / [無変換] </th><th>[カタカナ/ひらがな] </th><th>アプリケーションキー </th></tr>
+<tr><td>                  </td><td>   [Ctrl]   </td><td>  [変換] / [無変換] </td><td>        [半/全]       </td><td>       [CapLock]       </td></tr>
+<tr><td>       入替       </td><td>   [Ctrl]   </td><td>  [変換] / [無変換] </td><td>        [半/全]       </td><td>       [CapLock]       </td></tr>
+<tr><td>                  </td><td>   [Ctrl]   </td><td>       [Ctrl]       </td><td>        [半/全]       </td><td>       [CapLock]       </td></tr>
+<tr><td>       入替       </td><td>   [Ctrl]   </td><td>       [Ctrl]       </td><td>        [半/全]       </td><td>       [CapLock]       </td></tr>
+<tr><td>                  </td><td>   [半/全]  </td><td>       [Ctrl]       </td><td>        [半/全]       </td><td>       [CapLock]       </td></tr>
+<tr><td>       入替       </td><td>   [半/全]  </td><td>       [Ctrl]       </td><td>        [半/全]       </td><td>       [CapLock]       </td></tr>
+</table>
+
+<p>このため親指Ctrlキーボードレイアウトを使用するとMicrosoft社のUniversal mobile keyboardのように[半/全]が無いキーボードでも[カタカナ/ひらがな]で切り替えが可能になります。<br />
+Sony社の標準IMEであるPOBox plusのように[半/全]しか切り替えのない場合などに有用です。</p>
+</div></div>
+<div class="section entry" id="e2"><h1><a href="#t2" title="t2" name="t2" id="t2">■ 使用方法:</a></h1>
+<div class="textBody">
+
+<p>ハードウェアキーボードを接続した状態で、「設定」→「言語と入力」→「物理キーボード」から接続したハードウェアキーボードのキーボードレイアウトを変更します。<br />
+<a href="./layout_dialog.png"><img src="./layout_dialog.png" width ="25%" alt="./layout_dialog.png" /></a></p>
+
+<p>(ダイアログの形状はAndroidのバージョンによって異なります)</p>
+
+<h2 id="j21"><a href="#h20" title="h20" name="h20" id="h20">■</a> !!! 注意事項 !!!</h2>
+
+<p>本アプリではAndroid 4.1以降の「User-installable keymaps」に対応したKCM(Key Character Map)ファイルを追加してキーリマップを行います。<br />
+このため物理キーボードを接続したときに「設定」→「言語と入力」→「物理キーボード」タップ時の「キーボードレイアウトの選択」が無効化されている端末では使用できません。</p>
+
+<p>ASUS社の多くの端末とSamsung社その他でも該当する端末があります。</p>
+</div></div>
+<div class="section entry" id="e3"><h1><a href="#t3" title="t3" name="t3" id="t3">■ 補足:</a></h1>
+<div class="textBody">
+
+<p>「物理キーボード」タップ時の「キーボードレイアウトの選択」が無効化されている場合は、本アプリの配列変更は行えませんが、Google日本語入力やATOK passport等ではIMEアプリ自体の「設定」で日本語配列への変更は可能です。</p>
+
+<h2 id="j30"><a href="#h30" title="h30" name="h30" id="h30">■</a> 入力文字種の切替</h2>
+
+<p>IMEによっては動作しないようですが、Android標準で「半角/全角」等の切替をショートカットキーで行なえます。</p>
+
+<table><tr><td> [Shift]+[Space] </td><td> 半角/全角切替  </td></tr>
+<tr><td> [Ctrl]+[Space]  </td><td> レイアウト切替 </td></tr>
+</table>
+
+<p>その他にも、多くのIMEでは日本語/英数入力の切替をショートカットキーで行えます。</p>
+
+<p>日本語/英数入力切替([半/全]以外)</p>
+<table><tr><td> Google日本語入力 </td><td> [Alt]+[`], [Ctrl]+[Shift], [Shift]＋[無変換] </td></tr>
+<tr><td> ATOK             </td><td> [Alt]＋[Space], [変換]                       </td></tr>
+<tr><td> Wnn keyboard lab </td><td> [Shift]＋[Space]                             </td></tr>
+</table>
+
+<p>ハードウェアキーボードにファンクションキーがない、あるいはfnキーと同時押しで面倒な場合でも、IMEによっては文字種変換をショートカットキーで行えます。</p>
+
+<p>文字種変換 (Google日本語入力/ATOK)</p>
+<table><tr><td> ひらがな変換 </td><td> [Ctrl]+[u] </td></tr>
+<tr><td> カタカナ変換 </td><td> [Ctrl]+[i] </td></tr>
+<tr><td> 半角変換     </td><td> [Ctrl]+[o] </td></tr>
+<tr><td> 全角無変換   </td><td> [Ctrl]+[p] </td></tr>
+</table>
+
+<p>Google日本語入力</p>
+<table><tr><td> 英数変換 </td><td> [Ctrl]+[t] </td></tr>
+</table>
+
+<p>ATOK</p>
+<table><tr><td> 英数変換(日本語配列の場合) </td><td> [Ctrl]＋[@] </td></tr>
+<tr><td> 英数変換(英語配列の場合)   </td><td> [Ctrl]＋'[' </td></tr>
+</table>
+</div></div>
+<div class="section entry" id="e4"><h1><a href="#t4" title="t4" name="t4" id="t4">■ その他:</a></h1>
+<div class="textBody">
+
+<p>このアプリはオープンソースソフトウェアです。<br />
+<a href="https://github.com/shiftrot/ThumbCtrl">https://github.com/shiftrot/ThumbCtrl</a></p>
+</div></div>
+<p class="topicPath"><a href="javascript:history.back()" title="Prev">&lt;&lt;&nbsp;Prev</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#header" title="PageTop">PageTop</a></p>
+</div>
+<div id="utilities">
+<dl class="navi">
+<dt>Entries</dt><dd><ul>
+<li><a href="#t1" title="t1"> 概要:</a></li>
+<li><a href="#t2" title="t2"> 使用方法:</a></li>
+<li><a href="#t3" title="t3"> 補足:</a></li>
+<li><a href="#t4" title="t4"> その他:</a></li>
+</ul></dd>
+</dl>
+</div></div>
+</body>
+</html>
