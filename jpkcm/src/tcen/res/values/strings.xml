@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ThumbCtrl</string>
-    <string name="keyboard_layouts_label">ThumbCtrl</string>
+    <string name="app_name">ThumbCtrl (106/109)</string>
+    <string name="keyboard_layouts_label">ThumbCtrl (106/109)</string>
 
     <string name="keyboard_layout_en">US</string>
     <string name="keyboard_layout_en_hz">US [H/Z]</string>
