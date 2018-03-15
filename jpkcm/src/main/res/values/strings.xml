@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">ThumbCtrl (106/109)</string>
     <string name="keyboard_layouts_label">ThumbCtrl (106/109)</string>
+    <string name="description_html">tcja.ja.html</string>
 
     <string name="keyboard_layout_ja">Japanese</string>
     <string name="keyboard_layout_ja_esc_hz">Japanese ([ESC]-[H/Z])</string>

@@ -1,6 +1,7 @@
 package jp.kcm.thumbctrl;
 
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -54,8 +55,8 @@ public class Main extends AppCompatActivity {
                 if (url.startsWith("file:")) {
                     return false;
                 }
-                Uri uri = Uri.parse(url);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                if (openPlayStorePage(url)) return true;
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
                 return true;
             }
@@ -78,8 +79,7 @@ public class Main extends AppCompatActivity {
             }
         }
 
-        String html = "tcja.ja.html";
-        if (!BuildConfig.APPLICATION_ID.equals("jp.kcm.thumbctrl")) html = "tcen.ja.html";
+        String html = getString(R.string.description_html);
         mWebView.loadUrl("file:///android_asset/"+html);
     }
 
@@ -171,4 +171,24 @@ public class Main extends AppCompatActivity {
         }
         return false;
     }
+
+    private boolean openPlayStorePage(String url) {
+        if (!url.startsWith("https://play.google.com/store/apps/details?id=")) {
+            return false;
+        }
+        String pname = url.replaceFirst("https?://details\\?id=", "");
+        Uri uri = Uri.parse("market://details?id=" + pname);
+        Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+        // To count with Play market backstack, After pressing back button,
+        // to taken back to our application, we need to add following flags to intent.
+        goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+        try {
+            startActivity(goToMarket);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse(url)));
+        }
+        return true;
+    }
 }
+
