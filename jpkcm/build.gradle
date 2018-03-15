@@ -7,8 +7,8 @@ android {
         applicationId "jp.kcm.thumbctrl"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 14
-        versionName "1.0.13"
+        versionCode 22
+        versionName "1.0.21"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -31,10 +31,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:27.1.0'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    testImplementation 'junit:junit:4.12'
 }
