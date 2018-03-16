@@ -38,8 +38,8 @@ map key 58 CTRL_LEFT # CAPS_LOCK
 map key 92  CTRL_RIGHT      # HENKAN
 map key 93  ZENKAKU_HANKAKU # KATAKANA_HIRAGANA
 map key 94  CTRL_LEFT       # MUHENKAN
-map key 122 ZENKAKU_HANKAKU # KANA
-map key 123 CTRL_LEFT       # EISU
+# map key 122 KANA            # KANA
+# map key 123 EISU            # EISU
 map key 204 ZENKAKU_HANKAKU
 # map key 368 # KEY_LANGUAGE
 
