@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -20,6 +21,8 @@ import java.io.InputStreamReader;
 public class Main extends AppCompatActivity {
 
     private static int mFontSize = 140;
+    private static int mInitialInterval = 400;
+    private static int mNormalInterval = 100;
     private boolean mBack = false;
     private WebView mWebView;
     private PrefValue mPrefValue;
@@ -51,7 +54,8 @@ public class Main extends AppCompatActivity {
                 }
             }
             @Override
-            public boolean shouldOverrideUrlLoading(WebView webView, String url) {
+            public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest request) {
+                String url = request.getUrl().toString();
                 if (url.startsWith("file:")) {
                     return false;
                 }
@@ -89,8 +93,8 @@ public class Main extends AppCompatActivity {
         findViewById(R.id.webview_reload).setOnClickListener(mButtonListener);
         findViewById(R.id.webview_abort).setOnClickListener(mButtonListener);
         findViewById(R.id.webview_quit).setOnClickListener(mButtonListener);
-        findViewById(R.id.webview_plus).setOnClickListener(mButtonListener);
-        findViewById(R.id.webview_minus).setOnClickListener(mButtonListener);
+        findViewById(R.id.webview_plus).setOnTouchListener(new RepeatListener(mInitialInterval, mNormalInterval, mButtonListener));
+        findViewById(R.id.webview_minus).setOnTouchListener(new RepeatListener(mInitialInterval, mNormalInterval, mButtonListener));
     }
 
     View.OnClickListener mButtonListener = new View.OnClickListener() {
@@ -149,6 +153,11 @@ public class Main extends AppCompatActivity {
         return super.onKeyDown(keyCode, event);
     }
 
+    static public void setRepeatInterval(int initial, int normal) {
+        mInitialInterval = initial;
+        mNormalInterval = normal;
+    }
+
     private boolean load(WebView webView, String url, String prev) {
         if (url.matches("https?://.*")) {
             webView.loadUrl(url);
@@ -161,7 +170,7 @@ public class Main extends AppCompatActivity {
             String str;
             while ((str = reader.readLine()) != null) {
                 buffer.append(str);
-                buffer.append("\n");
+                buffer.append(System.getProperty("line.separator"));
             }
             String data = buffer.toString();
             webView.loadDataWithBaseURL("file://"+url, data, "text/html", "UTF-8", prev);
