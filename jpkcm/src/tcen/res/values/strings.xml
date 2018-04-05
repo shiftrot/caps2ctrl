@@ -7,18 +7,18 @@
     <string name="keyboard_layout_en">English (US), Caps to Ctrl</string>
     <string name="keyboard_layout_en_hz">106/109 English (US) [H/Z]</string>
 
-    <string name="keyboard_layout_en_esc_grave">English (US), Caps to Ctrl, [ESC]-[`]</string>
-    <string name="keyboard_layout_en_esc_hz">106/109 English (US) [ESC]-[H/Z]</string>
+    <string name="keyboard_layout_en_esc_grave">English (US), Caps to Ctrl, [ESC]⇔[`]</string>
+    <string name="keyboard_layout_en_esc_hz">106/109 English (US) [ESC]⇔[H/Z]</string>
 
-    <string name="keyboard_layout_en_caps">106/109 English (US) [Caps]=[H/Z]</string>
-    <string name="keyboard_layout_en_esc_grave_caps">106/109 English (US) [Caps]=[H/Z], [ESC]-[`]</string>
+    <string name="keyboard_layout_en_caps">106/109 English (US) [Caps]→[H/Z]</string>
+    <string name="keyboard_layout_en_esc_grave_caps">106/109 English (US) [Caps]→[H/Z], [ESC]⇔[`]</string>
 
     <string name="keyboard_layout_tc_en">106/109 English (US)</string>
     <string name="keyboard_layout_tc_en_hz">106/109 English (US) [H/Z]</string>
 
-    <string name="keyboard_layout_tc_en_esc_grave">106/109 English (US) [ESC]-[`]</string>
-    <string name="keyboard_layout_tc_en_esc_hz">106/109 English (US) [ESC]-[H/Z]</string>
+    <string name="keyboard_layout_tc_en_esc_grave">106/109 English (US) [ESC]⇔[`]</string>
+    <string name="keyboard_layout_tc_en_esc_hz">106/109 English (US) [ESC]⇔[H/Z]</string>
 
-    <string name="keyboard_layout_tc_en_caps">106/109 English (US) [Caps]=[H/Z]</string>
-    <string name="keyboard_layout_tc_en_esc_grave_caps">106/109 English (US) [Caps]=[H/Z], [ESC]-[H/Z]</string>
+    <string name="keyboard_layout_tc_en_caps">106/109 English (US) [Caps]→[H/Z]</string>
+    <string name="keyboard_layout_tc_en_esc_grave_caps">106/109 English (US) [Caps]→[H/Z], [ESC]⇔[H/Z]</string>
 </resources>
