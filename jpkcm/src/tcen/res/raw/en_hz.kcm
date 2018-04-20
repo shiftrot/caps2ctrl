@@ -45,10 +45,6 @@ map key 94  MUHENKAN        # MUHENKAN
 map key 204 ZENKAKU_HANKAKU #
 # map key 368 # KEY_LANGUAGE
 
-# META (Windows, Command)
-map key 125 HOME # META_LEFT
-# map key 126 HOME # META_RIGHT
-
 # ALT
 # key 56  # ALT_LEFT
 # key 100 # ALT_RIGHT
