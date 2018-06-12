@@ -1,30 +1,29 @@
+# !!! Notice !!!
+
+This software uses 'User installable keymap' (Android 4.1 or higher).
+Therefore, it can not be used on an Android device in which "Keyboard layouts" which should be present in Android's "Settings" -> "Languages & input" -> "Physical keyboard" is disabled.
+
+It may not be available on many Asus devices (and several Samsung devices).
+
 # What is this:
 
 This application adds a keyboard layout(English, US, qwerty) which changed "Caps Lock" to "Ctrl" for the physical keyboard.
 Also add a keyboard layout to swap "ESC" and "\`".
 
 English (US), Caps to Ctrl
-|#[ESC]-[\`] |#[Caps Lock]|#Application key |
+|#[ESC]-[\`] |#[Caps Lock]|   #Menu key     |
 |            |   [Ctrl]   |   [Caps Lock]   |
 |    Swap    |   [Ctrl]   |   [Caps Lock]   |
 
-The other 10 keyboard layouts are added as "106/109 English (US)" but this is for Japanese keyboard.
+- Instead of the menu key, you can use "[Ctrl] + [ESC]".
+- The other 10 keyboard layouts are added as "106/109 English (US)" but this is for Japanese keyboard.
 
 # How to use:
 
 With the physical keyboard connected, change the keyboard layout via Android's "Settings" → "Language & input" → "Physical keyboard".
 ./layout_dialog.png
 
-The setting location varies depending on the version of Android.
-
-In Android 7 and later, the layout can be changed for each keyboard application, so please change the layout for the keyboard application to use.
-
-## !!! Notice !!!
-
-This software uses 'User installable keymap' (Android 4.1 or higher).
-Therefore, it can not be used on an Android device in which "Keyboard layouts" which should be present in Android's "Settings" -> "Languages & input" -> "Physical keyboard" is disabled.
-
-It may not be available on many Asus devices (and several Samsung devices).
+Depending on the version of Android, the setting location may be different or layout setting may be required for each keyboard application.
 
 # Appendix
 
