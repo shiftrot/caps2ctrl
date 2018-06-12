@@ -6,6 +6,8 @@
 
     <string name="keyboard_layout_ja">Japanese</string>
     <string name="keyboard_layout_ja_esc_hz">Japanese ([ESC]⇔[H/Z])</string>
+    <string name="keyboard_layout_ja_caps">Japanese (Caps→[H/Z])</string>
+    <string name="keyboard_layout_ja_caps_esc_hz">Japanese (Caps→[H/Z]) ([ESC]⇔[H/Z])</string>
 
     <string name="keyboard_layout_tc_ja">ThumbCtrl(Ja)</string>
     <string name="keyboard_layout_tc_ja_esc_hz">ThumbCtrl(Ja) ([ESC]⇔[H/Z])</string>

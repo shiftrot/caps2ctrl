@@ -7,6 +7,13 @@
             android:label="@string/keyboard_layout_ja_esc_hz"
             android:keyboardLayout="@raw/ja_esc_hz" />
 
+    <keyboard-layout android:name="keyboard_layout_ja_caps"
+            android:label="@string/keyboard_layout_ja_caps"
+            android:keyboardLayout="@raw/ja_caps" />
+    <keyboard-layout android:name="keyboard_layout_ja_caps_esc_hz"
+            android:label="@string/keyboard_layout_ja_caps_esc_hz"
+            android:keyboardLayout="@raw/ja_caps_esc_hz" />
+
     <keyboard-layout android:name="keyboard_layout_tc_ja"
             android:label="@string/keyboard_layout_tc_ja"
             android:keyboardLayout="@raw/tc_ja" />

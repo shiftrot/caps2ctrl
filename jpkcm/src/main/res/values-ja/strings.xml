@@ -6,6 +6,8 @@
 
     <string name="keyboard_layout_ja">日本語配列</string>
     <string name="keyboard_layout_ja_esc_hz">日本語配列 ([ESC]⇔[半/全])</string>
+    <string name="keyboard_layout_ja_caps">日本語配列 (Caps→[半/全])</string>
+    <string name="keyboard_layout_ja_caps_esc_hz">日本語配列 (Caps→[半/全]) ([ESC]⇔[半/全])</string>
 
     <string name="keyboard_layout_tc_ja">親指CTRL(日本語配列)</string>
     <string name="keyboard_layout_tc_ja_esc_hz">親指CTRL(日本語配列) ([ESC]⇔[半/全])</string>
