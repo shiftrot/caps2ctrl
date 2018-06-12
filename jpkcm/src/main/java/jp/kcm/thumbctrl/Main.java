@@ -53,17 +53,19 @@ public class Main extends AppCompatActivity {
                     mBack = false;
                 }
             }
+
             @Override
             public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest request) {
                 String url = request.getUrl().toString();
-                if (url.startsWith("file:")) {
-                    return false;
-                }
-                if (openPlayStorePage(url)) return true;
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                startActivity(intent);
-                return true;
+                return overrideUrlLoading(webView, url);
             }
+
+            @SuppressWarnings("deprecation")
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView wevView, String url) {
+                return overrideUrlLoading(wevView, url);
+            }
+
         });
         setButtonListener();
 
@@ -181,11 +183,21 @@ public class Main extends AppCompatActivity {
         return false;
     }
 
-    private boolean openPlayStorePage(String url) {
-        if (!url.startsWith("https://play.google.com/store/apps/details?id=")) {
+    private boolean overrideUrlLoading(WebView view, String url) {
+        if (url.startsWith("file:")) {
             return false;
         }
-        String pname = url.replaceFirst("https?://details\\?id=", "");
+        if (openPlayStorePage(url)) return true;
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(intent);
+        return true;
+    }
+
+    private boolean openPlayStorePage(String url) {
+        if (!url.matches("https?://play.google.com/store/apps/details\\?id=.*")) {
+            return false;
+        }
+        String pname = url.replaceFirst("https?://.*/details\\?id=", "");
         Uri uri = Uri.parse("market://details?id=" + pname);
         Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
         // To count with Play market backstack, After pressing back button,
