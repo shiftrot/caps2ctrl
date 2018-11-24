@@ -16,7 +16,7 @@
 <div class="section entry" id="e1"><h1><a href="#t1" title="t1" name="t1" id="t1">■ !!! 注意事項 !!!</a></h1>
 <div class="textBody">
 
-<p>本アプリではAndroid 4.1以降の「User-installable keymaps」に対応したKCM(Key Character Map)ファイルを追加してキーリマップを行います。<br />
+<p>本アプリでは「User-installable keymaps」に対応したKCM(Key Character Map)ファイルを追加してキーリマップを行います。<br />
 このため物理キーボードを接続したときに「設定」→「言語と入力」→「物理キーボード」タップ時の「キーボードレイアウトの選択」が無効化されている端末では使用できません。</p>
 
 <p>ASUS社の多くの端末とSamsung社その他でも該当する端末があります。</p>
@@ -26,21 +26,35 @@
 
 <p>Android端末にBluetooth等で106/109日本語ハードウェアキーボードを接続した場合でも、デフォルトでは英語配列として扱われます。(@等の記号が刻印どおり入力できません)<br />
 本アプリは日本語キーボード用に日本語配列レイアウトを追加します。<br />
-また親指でCtrlキーを使用するために、[変換]/[無変換]/[CapsLock]を[Ctrl]へ置換した日本語配列も追加しています。</p>
+また親指でCtrlキーを使用するために、[変換]/[無変換]/[CapsLock]を[Ctrl]へ置換した日本語配列も追加しています。<br />
+※ 親指シフトやかな入力を実現するためのものではありません。</p>
 
-<p>※ 親指シフトやかな入力を実現するためのものではありません。<br />
-※ 英語配列を希望の場合は「<a href="https://play.google.com/store/apps/details?id=jp.kcm.thumbctrl.en.layout">106/109 親指Ctrlレイアウト (英語配列)</a>」を使用してください。</p>
+<h2 id="j20"><a href="#h20" title="h20" name="h20" id="h20">■</a> 英語配列+[Ctrl]/[半/全]</h2>
+
+<p>日本語配列ではなく英語配列のまま[変換]/[無変換]/[CapsLock]を[Ctrl]や[半/全]等へ置換したい場合は「<a href="https://play.google.com/store/apps/details?id=jp.kcm.thumbctrl.en.layout">106/109 親指Ctrlレイアウト (英語配列)</a>」を使用してください。</p>
+
+<h2 id="j21"><a href="#h21" title="h21" name="h21" id="h21">■</a> USハードウェアキーボードを日本語配列で使用したい場合</h2>
+
+<p>101/104等の英語配列(US)ハードウェアキーボードに、キー刻印と異なる日本語配列レイアウトを適用して使用することもできますが、英語配列キーボードでは「￥」キーと「バックスラッシュ」キーが物理的に足りません。<br />
+この場合は「<a href="https://play.google.com/apps/testing/jp.kcm.thumbctrl">106/109 親指Ctrlレイアウト (ベータ版)</a>」を使用してください。</p>
 </div></div>
 <div class="section entry" id="e3"><h1><a href="#t3" title="t3" name="t3" id="t3">■ 追加される日本語レイアウト:</a></h1>
 <div class="textBody">
 
 <p>追加される日本語レイアウトの本アプリ独自変更部分は以下のとおりです。</p>
 
+<ul><li> 日本語 - 親指CTRL
+</li></ul>
 <table><tr><th>[ESC] - [半/全] </th><th>[CapsLock] </th><th>[変換] / [無変換] </th></tr>
 <tr><td>                  </td><td>    [Ctrl]   </td><td>  [変換] / [無変換] </td></tr>
 <tr><td>       入替       </td><td>    [Ctrl]   </td><td>  [変換] / [無変換] </td></tr>
 <tr><td>                  </td><td>    [半/全]  </td><td>  [変換] / [無変換] </td></tr>
 <tr><td>       入替       </td><td>    [半/全]  </td><td>  [変換] / [無変換] </td></tr>
+</table>
+
+<ul><li> 日本語(親指CTRL) - 親指CTRL
+</li></ul>
+<table><tr><th>[ESC] - [半/全] </th><th>[CapsLock] </th><th>[変換] / [無変換] </th></tr>
 <tr><td>                  </td><td>    [Ctrl]   </td><td>       [Ctrl]       </td></tr>
 <tr><td>       入替       </td><td>    [Ctrl]   </td><td>       [Ctrl]       </td></tr>
 <tr><td>                  </td><td>    [半/全]  </td><td>       [Ctrl]       </td></tr>
@@ -61,6 +75,9 @@
 <p><a href="./layout_dialog.png"><img src="./layout_dialog.png" width ="25%" alt="./layout_dialog.png" /></a></p>
 
 <p>※ Androidのバージョンによって設定場所が異なったり、キーボードアプリごとにレイアウト設定が必要な場合があります。</p>
+
+<p><a href="./layout_dialog_8.png"><img src="./layout_dialog_8.png" width ="25%" alt="./layout_dialog_8.png" /></a><br />
+(Android 8.x-)</p>
 </div></div>
 <div class="section entry" id="e5"><h1><a href="#t5" title="t5" name="t5" id="t5">■ 補足:</a></h1>
 <div class="textBody">
