@@ -1,0 +1,356 @@
+type OVERLAY
+
+# AKC (Android 4.1 and up)
+# https://android.googlesource.com/platform/frameworks/base/+/jb-release/include/androidfw/KeycodeLabels.h
+# { "SWITCH_CHARSET", 95 },
+# { "LANGUAGE_SWITCH", 204 },
+# { "ZENKAKU_HANKAKU", 211 },
+# { "EISU", 212 },
+# { "MUHENKAN", 213 },
+# { "HENKAN", 214 },
+# { "KATAKANA_HIRAGANA", 215 },
+# { "YEN", 216 },
+# { "RO", 217 },
+# { "KANA", 218 },
+key ZENKAKU_HANKAKU {
+    base:                               fallback ZENKAKU_HANKAKU
+    shift:                              '~'
+    alt:                                fallback SWITCH_CHARSET
+}
+
+# 109
+# map key 26 AT
+# map key 27 LEFT_BRACKET
+# map key 43 RIGHT_BRACKET
+
+# ESC
+# map key 1 # ESCAPE
+
+# GRAVE
+map key 41 ZENKAKU_HANKAKU # GRAVE
+
+# Caps
+map key 58 CTRL_LEFT # CAPS_LOCK
+
+# Ctrl
+# map key 29 # CTRL_LEFT
+# map key 97 # CTRL_RIGHT
+
+# Japanese
+# map key 85 # ZENKAKU_HANKAKU
+# map key 90 # KEY_KATAKANA
+# map key 91 # KEY_HIRAGANA
+map key 92  CTRL_RIGHT      # HENKAN
+map key 93  ZENKAKU_HANKAKU # KATAKANA_HIRAGANA
+map key 94  CTRL_LEFT       # MUHENKAN
+# map key 122 KANA            # KANA
+# map key 123 EISU            # EISU
+map key 204 ZENKAKU_HANKAKU
+# map key 368 # KEY_LANGUAGE
+
+# ALT
+# key 56  # ALT_LEFT
+# key 100 # ALT_RIGHT
+
+# MENU
+map key 127 CAPS_LOCK # MENU
+
+# HOME
+# map key 172 # HOME
+
+# OADG
+# map key 26 AT
+# map key 27 LEFT_BRACKET
+# map key 43 RIGHT_BRACKET
+
+key 1 {
+  label: '1'
+  base: '1'
+  shift: '!'
+}
+
+key 2 {
+  label: '2'
+  base: '2'
+  shift: '"'
+}
+
+key 3 {
+  label: '3'
+  base: '3'
+  shift: '#'
+}
+
+key 4 {
+  label: '4'
+  base: '4'
+  shift: '$'
+}
+
+key 5 {
+  label: '5'
+  base: '5'
+  shift: '%'
+}
+
+key 6 {
+  label: '6'
+  base: '6'
+  shift: '&'
+}
+
+key 7 {
+  label: '7'
+  base: '7'
+  shift: '\''
+}
+
+key 8 {
+  label: '8'
+  base: '8'
+  shift: '('
+}
+
+key 9 {
+  label: '9'
+  base: '9'
+  shift: ')'
+}
+
+key 0 {
+  label: '0'
+  base: '0'
+  shift: none
+}
+
+key MINUS {
+  label: '-'
+  base: '-'
+  shift: '='
+}
+
+key EQUALS {
+  label: '^'
+  base: '^'
+  shift: '~'
+  alt: '\u00a5'
+  alt+shift: '|'
+}
+
+key YEN {
+  label: '\u00a5'
+  base: '\u00a5'
+  shift: '|'
+}
+
+key Q {
+  label: 'Q'
+  base: 'q'
+  shift: 'Q'
+}
+
+key W {
+  label: 'W'
+  base: 'w'
+  shift: 'W'
+}
+
+key E {
+  label: 'E'
+  base: 'e'
+  shift: 'E'
+}
+
+key R {
+  label: 'R'
+  base: 'r'
+  shift: 'R'
+}
+
+key T {
+  label: 'T'
+  base: 't'
+  shift: 'T'
+}
+
+key Y {
+  label: 'Y'
+  base: 'y'
+  shift: 'Y'
+}
+
+key U {
+  label: 'U'
+  base: 'u'
+  shift: 'U'
+}
+
+key I {
+  label: 'I'
+  base: 'i'
+  shift: 'I'
+}
+
+key O {
+  label: 'O'
+  base: 'o'
+  shift: 'O'
+}
+
+key P {
+  label: 'P'
+  base: 'p'
+  shift: 'P'
+}
+
+key LEFT_BRACKET {
+  label: '@'
+  base: '@'
+  shift: '`'
+}
+
+key RIGHT_BRACKET {
+  label: '['
+  base: '['
+  shift: '{'
+}
+
+key A {
+  label: 'A'
+  base: 'a'
+  shift: 'A'
+}
+
+key S {
+  label: 'S'
+  base: 's'
+  shift: 'S'
+}
+
+key D {
+  label: 'D'
+  base: 'd'
+  shift: 'D'
+}
+
+key F {
+  label: 'F'
+  base: 'f'
+  shift: 'F'
+}
+
+key G {
+  label: 'G'
+  base: 'g'
+  shift: 'G'
+}
+
+key H {
+  label: 'H'
+  base: 'h'
+  shift: 'H'
+}
+
+key J {
+  label: 'J'
+  base: 'j'
+  shift: 'J'
+}
+
+key K {
+  label: 'K'
+  base: 'k'
+  shift: 'K'
+}
+
+key L {
+  label: 'L'
+  base: 'l'
+  shift: 'L'
+}
+
+key SEMICOLON {
+  label: ';'
+  base: ';'
+  shift: '+'
+}
+
+key APOSTROPHE {
+  label: ':'
+  base: ':'
+  shift: '*'
+}
+
+key BACKSLASH {
+  label: ']'
+  base: ']'
+  shift: '}'
+}
+
+key Z {
+  label: 'Z'
+  base: 'z'
+  shift: 'Z'
+}
+
+key X {
+  label: 'X'
+  base: 'x'
+  shift: 'X'
+}
+
+key C {
+  label: 'C'
+  base: 'c'
+  shift: 'C'
+}
+
+key V {
+  label: 'V'
+  base: 'v'
+  shift: 'V'
+}
+
+key B {
+  label: 'B'
+  base: 'b'
+  shift: 'B'
+}
+
+key N {
+  label: 'N'
+  base: 'n'
+  shift: 'N'
+}
+
+key M {
+  label: 'M'
+  base: 'm'
+  shift: 'M'
+}
+
+key COMMA {
+  label: ','
+  base: ','
+  shift: '<'
+}
+
+key PERIOD {
+  label: '.'
+  base: '.'
+  shift: '>'
+}
+
+key SLASH {
+  label: '/'
+  base: '/'
+  shift: '?'
+  alt: '\\'
+  alt+shift: '_'
+}
+
+key RO {
+  label: '\\'
+  base: '\\'
+  shift: '_'
+}

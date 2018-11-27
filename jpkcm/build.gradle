@@ -23,6 +23,11 @@ android {
         jpkcm {
             dimension "default"
         }
+        beta {
+            dimension "default"
+            setVersionCode(1028)
+            setVersionName("1.0.1027")
+        }
         tcen {
             dimension "default"
             setApplicationId("jp.kcm.thumbctrl.en.layout")
