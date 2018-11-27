@@ -2,9 +2,11 @@ package jp.kcm.thumbctrl;
 
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -185,12 +187,47 @@ public class Main extends AppCompatActivity {
 
     private boolean overrideUrlLoading(WebView view, String url) {
         if (url.startsWith("file:")) {
-            return false;
+            return openSettings(url);
         }
+
         if (openPlayStorePage(url)) return true;
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(intent);
         return true;
+    }
+
+    private boolean openSettings(String url) {
+        if (!url.matches("file:///android_asset/ACTION_SETTINGS.*")) {
+            return false;
+        }
+
+        if (url.matches("file:///android_asset/ACTION_SETTINGS.LanguageAndInputSettings")) {
+            Intent intent = new Intent();
+            intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$InputMethodAndLanguageSettingsActivity" ));
+            if (startIntent(intent)) {
+                intent = new Intent();
+                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$LanguageAndInputSettingsActivity" ));
+                if (startIntent(intent)) {
+                    intent = new Intent(Settings.ACTION_SETTINGS);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startIntent(intent);
+                }
+            }
+        } else {
+            Intent intent = new Intent(Settings.ACTION_SETTINGS);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startIntent(intent);
+        }
+        return true;
+    }
+
+    private boolean startIntent(Intent intent) {
+        try {
+            startActivity(intent);
+        } catch (Exception e) {
+            return true;
+        }
+        return false;
     }
 
     private boolean openPlayStorePage(String url) {
