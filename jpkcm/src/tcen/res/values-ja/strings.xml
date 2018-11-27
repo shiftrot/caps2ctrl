@@ -13,12 +13,12 @@
     <string name="keyboard_layout_en_caps">英語配列 [Caps]→[半/全]</string>
     <string name="keyboard_layout_en_esc_grave_caps">英語配列 [Caps]→[半/全] [ESC]⇔[`]</string>
 
-    <string name="keyboard_layout_tc_en">親指CTRL(英語配列)</string>
-    <string name="keyboard_layout_tc_en_hz">親指CTRL(英語配列) [半/全]</string>
+    <string name="keyboard_layout_tc_en">英語配列 (親指CTRL)</string>
+    <string name="keyboard_layout_tc_en_hz">英語配列 (親指CTRL) [半/全]</string>
 
-    <string name="keyboard_layout_tc_en_esc_grave">親指CTRL(英語配列) [ESC]⇔[`]</string>
-    <string name="keyboard_layout_tc_en_esc_hz">親指CTRL(英語配列) [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_tc_en_esc_grave">英語配列 (親指CTRL) [ESC]⇔[`]</string>
+    <string name="keyboard_layout_tc_en_esc_hz">英語配列 (親指CTRL) [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_tc_en_caps">親指CTRL(英語配列) [Caps]→[半/全]</string>
-    <string name="keyboard_layout_tc_en_esc_grave_caps">親指CTRL(英語配列) [Caps]→[半/全] [ESC]⇔[`]</string>
+    <string name="keyboard_layout_tc_en_caps">英語配列 (親指CTRL) [Caps]→[半/全]</string>
+    <string name="keyboard_layout_tc_en_esc_grave_caps">英語配列 (親指CTRL) [Caps]→[半/全] [ESC]⇔[`]</string>
 </resources>
