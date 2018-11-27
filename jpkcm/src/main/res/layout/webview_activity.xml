@@ -22,13 +22,6 @@
             android:layout_weight="1"
             android:text="▶" />
         <Button
-            android:id="@+id/webview_plus"
-            android:minHeight="0dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="+" />
-        <Button
             android:id="@+id/webview_minus"
             android:minHeight="0dp"
             android:layout_width="wrap_content"
@@ -36,6 +29,14 @@
             android:layout_weight="1"
             android:text="-" />
         <Button
+            android:id="@+id/webview_plus"
+            android:minHeight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+" />
+        <Button
+            android:visibility="invisible"
             android:id="@+id/webview_reload"
             android:minHeight="0dp"
             android:layout_width="wrap_content"
@@ -43,6 +44,7 @@
             android:layout_weight="1"
             android:text="[R]" />
         <Button
+            android:visibility="invisible"
             android:id="@+id/webview_abort"
             android:minHeight="0dp"
             android:layout_width="wrap_content"
