@@ -4,6 +4,12 @@
     <string name="keyboard_layouts_label">親指Ctrl</string>
     <string name="description_html">tcen.ja.html</string>
 
+    <string name="keyboard_layout_en_caps_ctrl">英語配列 ([Caps]⇔[Ctrl])</string>
+    <string name="keyboard_layout_en_caps_ctrl_esc_grave">英語配列 ([Caps]⇔[Ctrl]) [ESC]⇔[`]</string>
+
+    <string name="keyboard_layout_tc_en_caps_ctrl">英語配列 ([Caps]⇔[Ctrl]+親指CTRL)</string>
+    <string name="keyboard_layout_tc_en_caps_ctrl_esc_grave">英語配列 ([Caps]⇔[Ctrl]+親指CTRL) [ESC]⇔[`]</string>
+
     <string name="keyboard_layout_en">英語配列</string>
     <string name="keyboard_layout_en_hz">英語配列 [半/全]</string>
 

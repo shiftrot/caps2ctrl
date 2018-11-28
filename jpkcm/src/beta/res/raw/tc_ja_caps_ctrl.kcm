@@ -12,9 +12,9 @@ key ZENKAKU_HANKAKU {
 
 map key 1   ESCAPE            # ESCAPE
 map key 41  ZENKAKU_HANKAKU   # GRAVE
-map key 58  ZENKAKU_HANKAKU   # CAPS_LOCK
-map key 29  CTRL_LEFT         # CTRL_LEFT
-map key 127 CAPS_LOCK         # MENU
+map key 58  CTRL_LEFT         # CAPS_LOCK
+map key 29  CAPS_LOCK         # CTRL_LEFT
+map key 127 MENU              # MENU
 
 map key 92  CTRL_RIGHT        # HENKAN
 map key 93  ZENKAKU_HANKAKU   # KATAKANA_HIRAGANA
@@ -92,6 +92,8 @@ key EQUALS {
   label: '^'
   base:  '^'
   shift: '~'
+  alt: '\u00a5'
+  alt+shift: '|'
 }
 
 key YEN {
@@ -302,6 +304,8 @@ key SLASH {
   label: '/'
   base:  '/'
   shift: '?'
+  alt: '\\'
+  alt+shift: '_'
 }
 
 key RO {

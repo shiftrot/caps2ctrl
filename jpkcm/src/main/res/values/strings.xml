@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ThumbCtrl (106/109)</string>
-    <string name="keyboard_layouts_label">ThumbCtrl (106/109)</string>
+    <string name="app_name">ThumbCtrl(JA)</string>
+    <string name="keyboard_layouts_label">ThumbCtrl(JA)</string>
     <string name="description_html">tcja.ja.html</string>
 
     <string name="keyboard_layout_ja">Japanese</string>
-    <string name="keyboard_layout_ja_esc_hz">Japanese ([ESC]⇔[H/Z])</string>
-    <string name="keyboard_layout_ja_caps">Japanese (Caps→[H/Z])</string>
-    <string name="keyboard_layout_ja_caps_esc_hz">Japanese (Caps→[H/Z]) ([ESC]⇔[H/Z])</string>
+    <string name="keyboard_layout_ja_esc_hz">Japanese [ESC]⇔[H/Z]</string>
+    <string name="keyboard_layout_ja_caps">Japanese [Caps]→[H/Z]</string>
+    <string name="keyboard_layout_ja_caps_esc_hz">Japanese [Caps]→[H/Z] [ESC]⇔[H/Z]</string>
 
-    <string name="keyboard_layout_tc_ja">ThumbCtrl(Ja)</string>
-    <string name="keyboard_layout_tc_ja_esc_hz">ThumbCtrl(Ja) ([ESC]⇔[H/Z])</string>
-    <string name="keyboard_layout_tc_ja_caps">ThumbCtrl(Ja) (Caps→[H/Z])</string>
-    <string name="keyboard_layout_tc_ja_caps_esc_hz">ThumbCtrl(Ja) (Caps→[H/Z]) ([ESC]⇔[H/Z])</string>
+    <string name="keyboard_layout_ja_caps_ctrl">Japanese([Caps]⇔[Ctrl])</string>
+    <string name="keyboard_layout_ja_caps_ctrl_esc_hz">Japanese([Caps]⇔[Ctrl]) [ESC]⇔[H/Z]</string>
+    <string name="keyboard_layout_tc_ja_caps_ctrl">Japanese([Caps]⇔[Ctrl]+ThumbCtrl)</string>
+    <string name="keyboard_layout_tc_ja_caps_ctrl_esc_hz">Japanese([Caps]⇔[Ctrl]+ThumbCtrl) [ESC]⇔[H/Z]</string>
 
-    <string name="keyboard_layout_tc_ja_oadg">ThumbCtrl(Ja) (OADG)</string>
-    <string name="keyboard_layout_tc_custom">ThumbCtrl (custom)</string>
+    <string name="keyboard_layout_tc_ja">ThumbCtrl(JA)</string>
+    <string name="keyboard_layout_tc_ja_esc_hz">ThumbCtrl(JA) [ESC]⇔[H/Z]</string>
+    <string name="keyboard_layout_tc_ja_caps">ThumbCtrl(JA) [Caps]→[H/Z]</string>
+    <string name="keyboard_layout_tc_ja_caps_esc_hz">ThumbCtrl(JA) [Caps]→[H/Z] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_tc_ja_oadg">ThumbCtrl(JA) (OADG)</string>
+    <string name="keyboard_layout_tc_custom">ThumbCtrl(JA) (custom)</string>
 </resources>

@@ -7,6 +7,20 @@
             android:label="@string/keyboard_layout_en_hz"
             android:keyboardLayout="@raw/en_hz" />
 
+    <keyboard-layout android:name="keyboard_layout_en_caps_ctrl"
+            android:label="@string/keyboard_layout_en_caps_ctrl"
+            android:keyboardLayout="@raw/en_caps_ctrl" />
+    <keyboard-layout android:name="keyboard_layout_en_caps_ctrl_esc_grave"
+            android:label="@string/keyboard_layout_en_caps_ctrl_esc_grave"
+            android:keyboardLayout="@raw/en_caps_ctrl_esc_grave" />
+
+    <keyboard-layout android:name="keyboard_layout_tc_en_caps_ctrl"
+            android:label="@string/keyboard_layout_tc_en_caps_ctrl"
+            android:keyboardLayout="@raw/tc_en_caps_ctrl" />
+    <keyboard-layout android:name="keyboard_layout_tc_en_caps_ctrl_esc_grave"
+            android:label="@string/keyboard_layout_tc_en_caps_ctrl_esc_grave"
+            android:keyboardLayout="@raw/tc_en_caps_ctrl_esc_grave" />
+
     <keyboard-layout android:name="keyboard_layout_en_esc_hz"
             android:label="@string/keyboard_layout_en_esc_hz"
             android:keyboardLayout="@raw/en_esc_hz" />
