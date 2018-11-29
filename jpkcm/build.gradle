@@ -7,8 +7,8 @@ android {
 
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 28
-        versionName "1.0.27"
+        versionCode 30
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -20,13 +20,13 @@ android {
 
     productFlavors {
         flavorDimensions "default"
-        jpkcm {
+        base {
             dimension "default"
         }
         beta {
             dimension "default"
-            setVersionCode(1028)
-            setVersionName("1.0.1027")
+            setVersionCode(1030)
+            setVersionName("1.1")
         }
         tcen {
             dimension "default"
