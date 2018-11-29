@@ -1,8 +1,9 @@
 # !!! Notice !!!
 
 This software uses 'User installable keymap' (Android 4.1 and up).
-Therefore, it can not be used on an Android device whose manufacturer disabled "Settings" -> "languages & input" -> "Physical keyboard" of Android settings.
-「&<a href="ACTION_SETTINGS.LanguageAndInputSettings">Settings&</a>」
+Therefore, it can not be used on an Android device whose manufacturer disabled "Settings" -> "Languages & input" -> "Physical keyboard" of Android settings.
+
+「&<a href="ACTION_SETTINGS.LanguageAndInputSettings">Settings&</a>」 (Open after connecting a physical keyboard)
 
 For more information, please contact the user support of your Android device.
 
@@ -11,20 +12,24 @@ For more information, please contact the user support of your Android device.
 This application adds a keyboard layout(English, US, qwerty) which changed "Caps Lock" to "Ctrl" for the physical keyboard.
 Also add a keyboard layout to swap "ESC" and "\`".
 
-English (US), Caps to Ctrl
-|#[ESC]-[\`] |#[Caps Lock]|   #Menu key     |
-|            |   [Ctrl]   |   [Caps Lock]   |
-|    Swap    |   [Ctrl]   |   [Caps Lock]   |
+- English (US)
+|#[ESC]-[\`] |#[CapsLock] |#Left Ctrl   |#Menu key   |
+|            |   [Ctrl]   |             | [CapsLock] |
+|    Swap    |   [Ctrl]   |             | [CapsLock] |
+|            |   [Ctrl]   | [Caps Lock] |            |
+|    Swap    |   [Ctrl]   | [Caps Lock] |            |
 
 - Instead of the menu key, you can use "[Ctrl] + [ESC]".
-- The other 10 keyboard layouts are added as "106/109 English (US)" but These are for Japanese keyboard.
+- The other keyboard layouts are added as "Japanese (EN)" or "ThumbCtrl (EN)" but these are for Japanese keyboard.
+
 
 # How to use:
 
-With the physical keyboard connected, change the keyboard layout via Android's "Settings" → "Language & input" → "Physical keyboard".
+With the physical keyboard connected, change the keyboard layout via Android's "Settings" -> "Languages & input" -> "Physical keyboard".
 
 Depending on the version of Android, the setting location may be different or layout setting may be required for each keyboard application.
-「&<a href="ACTION_SETTINGS.LanguageAndInputSettings">Settings&</a>」
+
+「&<a href="ACTION_SETTINGS.LanguageAndInputSettings">Settings&</a>」 (Open after connecting a physical keyboard)
 
 # Appendix
 

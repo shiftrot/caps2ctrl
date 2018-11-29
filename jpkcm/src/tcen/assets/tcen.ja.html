@@ -17,48 +17,89 @@
 <div class="textBody">
 
 <p>本アプリでは「User-installable keymaps」に対応したKCM(Key Character Map)ファイルを追加してキーリマップを行います。<br />
-このため物理キーボードを接続したときに「設定」→「言語と入力」→「物理キーボード」タップ時の「キーボードレイアウトの選択」がメーカーによって無効化されている端末では使用できません。<br />
-「<a href="ACTION_SETTINGS.LanguageAndInputSettings">設定</a>」</p>
+このためハードウェアキーボードを接続したときに「設定」→「言語と入力」→「物理キーボード」タップ時の「キーボードレイアウトの選択」がメーカーによって無効化されている端末では使用できません。</p>
 
-<p>この制限はAndroid端末メーカーにより決定されていて、本アプリでは変更できません。<br />
-詳しくは使用しているAndroid端末のユーザーサポートへお問い合わせください。</p>
+<p>「<a href="ACTION_SETTINGS.LanguageAndInputSettings">設定</a>」(ハードウェアキーボードを接続してから開いてください)</p>
+
+<p>※ この制限はAndroid端末メーカーによるもので、本アプリでは対処できません。<br />
+※ 詳しくは使用しているAndroid端末のユーザーサポートへお問い合わせください。</p>
 </div></div>
 <div class="section entry" id="e2"><h1><a href="#t2" title="t2" name="t2" id="t2">■ 概要:</a></h1>
 <div class="textBody">
 
-<p>Android端末にBluetooth等で106/109日本語ハードウェアキーボードを接続した場合、日本語キーボード固有のキーに[Ctrl]等を割り当てます。<br />
+<p>Android端末にBluetooth等で接続した106/109日本語ハードウェアキーボード用に、[CapsLock]を[Ctrl]または[半/全]へ置換、[変換]/[無変換]などの日本語キーボード固有キーに[Ctrl]や[半/全]を割り当てる英語配列レイアウトを追加します。<br />
 101/104英語配列キーボードで使用する場合は[ESC]-[`]の入れ替えと、[CapsLock]へ[Ctrl]または[半/全]を割り当てることができます。</p>
 
-<p>※ 基本レイアウトは「英語配列」です。日本語配列を希望の場合は「<a href="https://play.google.com/store/apps/details?id=jp.kcm.thumbctrl">106/109ハードウェアキーボード配列変更(+親指Ctrl)</a>」を使用してください。</p>
+<p>※ 基本レイアウトは「英語配列」です。「日本語配列」を希望の場合は「<a href="https://play.google.com/store/apps/details?id=jp.kcm.thumbctrl">106/109ハードウェアキーボード配列変更(+親指Ctrl)</a>」を使用してください。</p>
 
 <p>追加される英語キーボードレイアウトの変更部分は以下のとおりです。</p>
 
-<p>英語配列</p>
-<table><tr><th>[ESC]  </th><th>[半/全] </th><th>[Caps Lock]</th><th>[変換] / [無変換] </th></tr>
-<tr><td>  [ESC]  </td><td>   [`]  </td><td>   [Ctrl]   </td><td> [変換] / [無変換] </td></tr>
-<tr><td>  [ESC]  </td><td> [半/全] </td><td>   [Ctrl]   </td><td> [変換] / [無変換] </td></tr>
-<tr><td>   [`]  </td><td>  [ESC]  </td><td>   [Ctrl]   </td><td> [変換] / [無変換] </td></tr>
-<tr><td> [半/全] </td><td>  [ESC]  </td><td>   [Ctrl]   </td><td> [変換] / [無変換] </td></tr>
-<tr><td>  [ESC]  </td><td>   [`]  </td><td>   [半/全]  </td><td> [変換] / [無変換] </td></tr>
-<tr><td>   [`]  </td><td>  [ESC]  </td><td>   [半/全]  </td><td> [変換] / [無変換] </td></tr>
+<ul><li> 英語配列
+</li></ul>
+<table><tr><th>[ESC]  </th><th>[半/全] </th><th>[CapsLock] </th><th>[変換]/[無変換] </th></tr>
+<tr><td>  [ESC]  </td><td>   [`]  </td><td>   [Ctrl]   </td><td> [変換]/[無変換] </td></tr>
+<tr><td>  [ESC]  </td><td> [半/全] </td><td>   [Ctrl]   </td><td> [変換]/[無変換] </td></tr>
+<tr><td>   [`]  </td><td>  [ESC]  </td><td>   [Ctrl]   </td><td> [変換]/[無変換] </td></tr>
+<tr><td> [半/全] </td><td>  [ESC]  </td><td>   [Ctrl]   </td><td> [変換]/[無変換] </td></tr>
+<tr><td>  [ESC]  </td><td>   [`]  </td><td>   [半/全]  </td><td> [変換]/[無変換] </td></tr>
+<tr><td>   [`]  </td><td>  [ESC]  </td><td>   [半/全]  </td><td> [変換]/[無変換] </td></tr>
 </table>
 
-<p>英語配列 (親指CTRL)</p>
-<table><tr><th>[ESC]  </th><th>[半/全] </th><th>[Caps Lock]</th><th>[変換] / [無変換] </th></tr>
-<tr><td>  [ESC]  </td><td>   [`]  </td><td>   [Ctrl]   </td><td>      [Ctrl]       </td></tr>
-<tr><td>  [ESC]  </td><td> [半/全] </td><td>   [Ctrl]   </td><td>      [Ctrl]       </td></tr>
-<tr><td>   [`]  </td><td>  [ESC]  </td><td>   [Ctrl]   </td><td>      [Ctrl]       </td></tr>
-<tr><td> [半/全] </td><td>  [ESC]  </td><td>   [Ctrl]   </td><td>      [Ctrl]       </td></tr>
-<tr><td>  [ESC]  </td><td>   [`]  </td><td>   [半/全]  </td><td>      [Ctrl]       </td></tr>
-<tr><td>   [`]  </td><td>  [ESC]  </td><td>   [半/全]  </td><td>      [Ctrl]       </td></tr>
+<ul><li> 英語配列(Caps⇔Ctrl)
+</li></ul>
+<table><tr><th>[ESC]  </th><th>[半/全] </th><th>[CapsLock]-[Ctrl] </th><th>[変換]/[無変換] </th></tr>
+<tr><td>  [ESC]  </td><td>  [`]   </td><td>         入替      </td><td> [変換]/[無変換] </td></tr>
+<tr><td>  [`]   </td><td>  [ESC]  </td><td>         入替      </td><td> [変換]/[無変換] </td></tr>
 </table>
 
-<p>共通</p>
-<table><tr><th>[￥]   </th><th>[カタカナ/ひらがな] </th><th>アプリケーションキー </th></tr>
-<tr><td> [`]/[~] </td><td>       [半/全]       </td><td>     [Caps Lock]      </td></tr>
+<ul><li> 英語配列(Caps⇔Ctrl+親指CTRL)
+</li></ul>
+<table><tr><th>[ESC]  </th><th>[半/全] </th><th>[CapsLock]-[Ctrl] </th><th>[変換]/[無変換] </th></tr>
+<tr><td>  [ESC]  </td><td>  [`]   </td><td>         入替      </td><td>      [Ctrl]     </td></tr>
+<tr><td>  [`]   </td><td>  [ESC]  </td><td>         入替      </td><td>      [Ctrl]     </td></tr>
 </table>
 
-<p>※ アプリケーションキーは"[Ctrl]+[ESC]"で代用してください。</p>
+<ul><li> 英語配列(親指CTRL)
+</li></ul>
+<table><tr><th>[ESC]  </th><th>[半/全] </th><th>[CapsLock] </th><th>[変換]/[無変換] </th></tr>
+<tr><td>  [ESC]  </td><td>   [`]  </td><td>   [Ctrl]   </td><td>      [Ctrl]     </td></tr>
+<tr><td>  [ESC]  </td><td> [半/全] </td><td>   [Ctrl]   </td><td>      [Ctrl]     </td></tr>
+<tr><td>   [`]  </td><td>  [ESC]  </td><td>   [Ctrl]   </td><td>      [Ctrl]     </td></tr>
+<tr><td> [半/全] </td><td>  [ESC]  </td><td>   [Ctrl]   </td><td>      [Ctrl]     </td></tr>
+<tr><td>  [ESC]  </td><td>   [`]  </td><td>   [半/全]  </td><td>      [Ctrl]     </td></tr>
+<tr><td>   [`]  </td><td>  [ESC]  </td><td>   [半/全]  </td><td>      [Ctrl]     </td></tr>
+</table>
+
+<ul><li> 共通
+</li></ul>
+<table><tr><th>[￥]     </th><th>[カタカナ/ひらがな] </th><th>アプリケーションキー </th></tr>
+<tr><td> [`]/[~] </td><td>       [半/全]       </td><td>     [CapsLock]       </td></tr>
+</table>
+
+<p>※ 日本語配列ハードウェアキーボードの[半/全]と英語配列ハードウェアキーボードの[`]キーは同一キーです。<br />
+※ 日本語キーボードで[半/全]キーを入力切替に使用する場合は[`]/[~]の入力に[￥]キーを使用してください。<br />
+※ 英語配列キーボードでは[半/全]を割り当てないレイアウトか、[CapsLock]を[半/全]として扱うレイアウトを使用してください。<br />
+※ アプリケーションキーは"[Ctrl]+[ESC]"で代用可能です。</p>
+
+<h2 id="j20"><a href="#h20" title="h20" name="h20" id="h20">■</a> Apple社製キーボードの[英数]と[かな]</h2>
+
+<ul><li> 英語配列, 英語配列(Caps⇔Ctrl)
+</li></ul>
+<table><tr><th>[英数]  </th><th>[かな] </th></tr>
+<tr><td> [無変換] </td><td> [変換] </td></tr>
+</table>
+
+<ul><li> 英語配列(Caps⇔Ctrl+親指CTRL)
+</li></ul>
+<table><tr><th>[英数]  </th><th>[かな] </th></tr>
+<tr><td> [無変換] </td><td> [半/全] </td></tr>
+</table>
+
+<ul><li> 英語配列(親指CTRL)
+</li></ul>
+<table><tr><th>[英数]   </th><th>[かな] </th></tr>
+<tr><td> [CapsLock] </td><td> [半/全] </td></tr>
+</table>
 </div></div>
 <div class="section entry" id="e3"><h1><a href="#t3" title="t3" name="t3" id="t3">■ 使用方法:</a></h1>
 <div class="textBody">
@@ -70,7 +111,7 @@
 
 <p><a href="./layout_dialog_8.jpg"><img src="./layout_dialog_8.jpg" width ="25%" alt="./layout_dialog_8.jpg" /></a></p>
 
-<p>「<a href="ACTION_SETTINGS.LanguageAndInputSettings">設定</a>」</p>
+<p>「<a href="ACTION_SETTINGS.LanguageAndInputSettings">設定</a>」(ハードウェアキーボードを接続してから開いてください)</p>
 </div></div>
 <div class="section entry" id="e4"><h1><a href="#t4" title="t4" name="t4" id="t4">■ 補足:</a></h1>
 <div class="textBody">
@@ -88,10 +129,10 @@
 <p>その他にも、多くのIMEでは日本語/英数の言語切替をショートカットキーで行えます。</p>
 
 <p>日本語/英数入力切替</p>
-<table><tr><th>Gboard           </th><td> [半/全]<br>[Shift]＋[Space]                                   </td></tr>
-<tr><th>Google日本語入力 </th><td> [半/全]<br>[Alt]+[`]<br>[Shift]+[Ctrl]<br>[Shift]＋[無変換] </td></tr>
-<tr><th>ATOK             </th><td> [半/全]<br>[Alt]＋[Space]<br>[変換]                          </td></tr>
-<tr><th>Wnn keyboard lab </th><td> [半/全]<br>[Shift]＋[Space]                                   </td></tr>
+<table><tr><th>Gboard           </th><td> [半/全]<br>[Shift]＋[Space]             </td></tr>
+<tr><th>Google日本語入力 </th><td> [半/全]<br>[Alt]+[`]<br>[Ctrl]+[Shift] </td></tr>
+<tr><th>ATOK             </th><td> [半/全]<br>[Alt]＋[Space]<br>[変換]    </td></tr>
+<tr><th>Wnn keyboard lab </th><td> [半/全]<br>[Shift]＋[Space]             </td></tr>
 </table>
 
 <p>ハードウェアキーボードにファンクションキーがない、あるいはfnキーと同時押しで面倒な場合でも、IMEによっては文字種変換をショートカットキーで行えます。</p>
