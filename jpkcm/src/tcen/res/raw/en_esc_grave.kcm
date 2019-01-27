@@ -24,14 +24,16 @@ map key 123 MUHENKAN          # EISU
 
 # YEN -> GRAVE
 key YEN {
-    label:  '`'
-    base:   '`'
-    shift:  '~'
+    label:     '`'
+    base:      '`'
+    shift:     '~'
+    alt:       '\u0300'
+    alt+shift: '\u0303'
 }
 
 key RO {
-    label:  '\u00a5'
-    base:   '\u00a5'
-    shift:  '_'
+    label:     '\u00a5'
+    base:      '\u00a5'
+    shift:     '_'
 }
 
