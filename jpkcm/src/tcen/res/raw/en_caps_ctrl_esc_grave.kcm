@@ -4,8 +4,9 @@ type OVERLAY
 
 key ZENKAKU_HANKAKU {
     base:  fallback ZENKAKU_HANKAKU
-    shift: '~'
     alt:   fallback SWITCH_CHARSET
+    shift: '~'
+    ctrl:  '`'
 }
 
 # https://android.googlesource.com/platform/frameworks/base/+/cd92588/data/keyboards/Generic.kl

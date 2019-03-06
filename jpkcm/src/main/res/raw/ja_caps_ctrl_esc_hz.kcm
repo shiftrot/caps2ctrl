@@ -4,7 +4,6 @@ type OVERLAY
 
 key ZENKAKU_HANKAKU {
     base:  fallback ZENKAKU_HANKAKU
-    shift: '~'
     alt:   fallback SWITCH_CHARSET
 }
 
