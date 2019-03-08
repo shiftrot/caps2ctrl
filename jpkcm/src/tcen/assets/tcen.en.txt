@@ -1,9 +1,9 @@
 # !!! Notice !!!
 
 This software uses 'User installable keymap' (Android 4.1 and up).
-Therefore, it can not be used on an Android device whose manufacturer disabled "Settings" -> "Languages & input" -> "Physical keyboard" of Android settings.
+Therefore, it can not be used on an Android device whose manufacturer disabled "Settings" -> "Languages & input" -> "Physical keyboard (Your keyboard device name)" of Android settings.
 
-「&<a href="ACTION_SETTINGS.LanguageAndInputSettings">Settings&</a>」 (Open after connecting a physical keyboard)
+「&<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">Settings&</a>」 (Open after connecting a physical keyboard)
 
 For more information, please contact the user support of your Android device.
 
@@ -25,11 +25,11 @@ Also add a keyboard layout to swap "ESC" and "\`".
 
 # How to use:
 
-With the physical keyboard connected, change the keyboard layout via Android's "Settings" -> "Languages & input" -> "Physical keyboard".
+With the physical keyboard connected, change the keyboard layout via Android's "Settings" -> "Languages & input" -> "Physical keyboard (Your keyboard device name)".
 
 Depending on the version of Android, the setting location may be different or layout setting may be required for each keyboard application.
 
-「&<a href="ACTION_SETTINGS.LanguageAndInputSettings">Settings&</a>」 (Open after connecting a physical keyboard)
+「&<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">Settings&</a>」 (Open after connecting a physical keyboard)
 
 # Appendix
 
