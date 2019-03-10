@@ -301,7 +301,12 @@ public class Main extends AppCompatActivity {
         String action = getSettingsAction(url);
         Intent intent = new Intent(action);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        return startIntent(intent);
+        if (!startIntent(intent)) {
+            intent = new Intent(Settings.ACTION_SETTINGS);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            return startIntent(intent);
+        }
+        return true;
     }
 
     private String getSettingsAction(String action) {
