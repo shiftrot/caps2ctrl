@@ -20,7 +20,7 @@ android {
 
     productFlavors {
         flavorDimensions "default"
-        base {
+        basic {
             dimension "default"
         }
         beta {
