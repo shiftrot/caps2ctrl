@@ -1,15 +1,5 @@
-# !!! Notice !!!
-
-This software uses 'User installable keymap' (Android 4.1 and up).
-Therefore, it can not be used on an Android device whose manufacturer disabled "Settings" -> "Languages & input" -> "Physical keyboard (Your keyboard device name)" of Android settings.
-
-「&<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">Settings&</a>」 (Open after connecting a physical keyboard)
-
-For more information, please contact the user support of your Android device.
-
 # What is this:
-
-This application adds a keyboard layout(English, US, qwerty) which changed "Caps Lock" to "Ctrl" for the physical keyboard.
+This application adds a keyboard layout (English, US, qwerty) which changed "Caps Lock" to "Ctrl" for the physical keyboard.
 Also add a keyboard layout to swap "ESC" and "\`".
 
 - English (US)
@@ -18,21 +8,25 @@ Also add a keyboard layout to swap "ESC" and "\`".
 |    Swap    |   [Ctrl]   |             | [CapsLock] |
 |            |   [Ctrl]   | [Caps Lock] |            |
 |    Swap    |   [Ctrl]   | [Caps Lock] |            |
-
 - Instead of the menu key, you can use "[Ctrl] + [ESC]".
 - The other keyboard layouts are added as "Japanese (EN)" or "ThumbCtrl (EN)" but these are for Japanese keyboard.
 
-
 # How to use:
++ <strong>Connect a physical keyboard.</strong>
++ Open Android "Settings"
++ "Languages & input"
++ "Physical keyboard (keyboard device name)"
++ Choose keyboard layout.
+ * Depending on the Android version, the setting location may be different or layout setting may be required for each keyboard application.
+It is also available from the following link =>
+- 「&<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">Physical keyboard&</a>」
+- 「&<a href="ACTION_SETTINGS/ACTION_ALT_INPUT_SETTINGS">Languages and input&</a>」
 
-With the physical keyboard connected, change the keyboard layout via Android's "Settings" -> "Languages & input" -> "Physical keyboard (Your keyboard device name)".
-
-Depending on the version of Android, the setting location may be different or layout setting may be required for each keyboard application.
-
-「&<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">Settings&</a>」 (Open after connecting a physical keyboard)
+## !!! Caution !!!
+If "Choose Keyboard Layout" does not exist, please contact your Android device customer support. (Your Android device prohibits changing settings. So this application can not change it)
+ * This software uses 'User installable keymap' (Android 4.1 and up).
 
 # Appendix
-
 This software is an open source software.
-https://github.com/shiftrot/ThumbCtrl
+https://github.com/shiftrot/caps2ctrl
 

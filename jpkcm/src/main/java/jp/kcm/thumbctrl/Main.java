@@ -2,6 +2,7 @@ package jp.kcm.thumbctrl;
 
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -297,12 +298,34 @@ public class Main extends AppCompatActivity {
         }
         url = url.replaceFirst(ANDROID_SETTINGS+"/?", "");
         String action = getSettingsAction(url);
+
+        if (url.equals("ACTION_ALT_INPUT_SETTINGS")) {
+            return openLanguageAndInputSettigns();
+        }
+
         Intent intent = new Intent(action);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         if (!startIntent(intent)) {
             intent = new Intent(Settings.ACTION_SETTINGS);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             return startIntent(intent);
+        }
+
+        return true;
+    }
+
+    private boolean openLanguageAndInputSettigns() {
+        Intent intent = new Intent();
+        intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$InputMethodAndLanguageSettingsActivity" ));
+        if (!startIntent(intent)) {
+            intent = new Intent();
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$LanguageAndInputSettingsActivity" ));
+            if (!startIntent(intent)) {
+                intent = new Intent(Settings.ACTION_SETTINGS);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startIntent(intent);
+            }
         }
         return true;
     }
