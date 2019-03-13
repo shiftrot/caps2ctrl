@@ -52,38 +52,37 @@
             android:layout_weight="1"
             android:text="X" />
         <Button
-            android:id="@+id/webview_top"
+            android:id="@+id/webview_page_up"
             android:minHeight="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="△" />
         <Button
-            android:id="@+id/webview_bottom"
+            android:id="@+id/webview_page_down"
             android:minHeight="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="▽" />
         <Button
-            android:visibility="gone"
             android:id="@+id/webview_menu"
             android:minHeight="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="◇" />
+            android:text="≡" />
         <Button
+            android:visibility="gone"
             android:id="@+id/webview_quit"
             android:minHeight="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="≡" />
+            android:text="Q" />
     </LinearLayout>
     <WebView
         android:id="@+id/WebView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_height="wrap_content" />
 </LinearLayout>

@@ -103,10 +103,10 @@ public class Main extends AppCompatActivity {
         findViewById(R.id.webview_forward).setOnClickListener(mButtonListener);
         findViewById(R.id.webview_reload).setOnClickListener(mButtonListener);
         findViewById(R.id.webview_abort).setOnClickListener(mButtonListener);
-        findViewById(R.id.webview_top).setOnClickListener(mButtonListener);
-        findViewById(R.id.webview_bottom).setOnClickListener(mButtonListener);
         findViewById(R.id.webview_menu).setOnClickListener(mButtonListener);
         findViewById(R.id.webview_quit).setOnClickListener(mButtonListener);
+        findViewById(R.id.webview_page_up).setOnClickListener(mButtonListener);
+        findViewById(R.id.webview_page_down).setOnClickListener(mButtonListener);
         findViewById(R.id.webview_plus).setOnTouchListener(new RepeatListener(mInitialInterval, mNormalInterval, mButtonListener));
         findViewById(R.id.webview_minus).setOnTouchListener(new RepeatListener(mInitialInterval, mNormalInterval, mButtonListener));
     }
@@ -145,17 +145,17 @@ public class Main extends AppCompatActivity {
                 case R.id.webview_abort:
                     mWebView.stopLoading();
                     break;
-                case R.id.webview_top:
-                    mWebView.scrollTo(0,0);
+                case R.id.webview_page_up:
+                    mWebView.pageUp(false);
                     break;
-                case R.id.webview_bottom:
-                    mWebView.scrollTo(0,mWebView.getContentHeight());
-                    break;
-                case R.id.webview_quit:
-                    confirmQuit();
+                case R.id.webview_page_down:
+                    mWebView.pageDown(false);
                     break;
                 case R.id.webview_menu:
                     menu();
+                    break;
+                case R.id.webview_quit:
+                    confirmQuit();
                     break;
                 default:
                     break;
@@ -185,9 +185,7 @@ public class Main extends AppCompatActivity {
     }
 
     private void menu() {
-        String[] items = new String[]{getString(R.string.scroll_to_top),
-                                      getString(R.string.scroll_to_bottom),
-                                      getString(R.string.quit)};
+        String[] items = {getString(R.string.scroll_to_top), getString(R.string.scroll_to_bottom), getString(R.string.quit)};
         final int quit = items.length-1;
         new AlertDialog.Builder(mWebView.getContext())
                 .setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
@@ -197,9 +195,9 @@ public class Main extends AppCompatActivity {
                         if (which == quit) {
                             mHandler.post(mFinish);
                         } else if (which == 0) {
-                            mWebView.scrollTo(0,0);
+                            mWebView.pageUp(true);
                         } else if (which == 1) {
-                            mWebView.scrollTo(0, mWebView.getContentHeight());
+                            mWebView.pageDown(true);
                         }
                     }
                 })
