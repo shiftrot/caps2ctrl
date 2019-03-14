@@ -4,26 +4,26 @@
     <string name="keyboard_layouts_label">親指Ctrl</string>
     <string name="description_html">tcja.ja.html</string>
 
-    <string name="keyboard_layout_ja">日本語</string>
-    <string name="keyboard_layout_ja_esc_hz">日本語 [ESC]⇔[半/全]</string>
-    <string name="keyboard_layout_ja_caps">日本語 [Caps]→[半/全]</string>
-    <string name="keyboard_layout_ja_caps_esc_hz">日本語 [Caps]→[半/全] [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_ja"                    >日本語 [Caps]→[Ctrl]</string>
+    <string name="keyboard_layout_ja_esc_hz"             >日本語 [Caps]→[Ctrl] [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_ja_caps_ctrl">日本語([Caps]⇔[Ctrl])</string>
-    <string name="keyboard_layout_ja_caps_ctrl_esc_hz">日本語([Caps]⇔[Ctrl]) [ESC]⇔[半/全]</string>
-    <string name="keyboard_layout_tc_ja_caps_ctrl">日本語([Caps]⇔[Ctrl]+親指CTRL)</string>
-    <string name="keyboard_layout_tc_ja_caps_ctrl_esc_hz">日本語([Caps]⇔[Ctrl]+親指CTRL) [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_ja_caps_ctrl"          >日本語 [Caps]⇔[Ctrl]</string>
+    <string name="keyboard_layout_ja_caps_ctrl_esc_hz"   >日本語 [Caps]⇔[Ctrl] [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_tc_ja">日本語(親指CTRL)</string>
-    <string name="keyboard_layout_tc_ja_esc_hz">日本語(親指CTRL) [ESC]⇔[半/全]</string>
-    <string name="keyboard_layout_tc_ja_caps">日本語(親指CTRL) [Caps]→[半/全]</string>
-    <string name="keyboard_layout_tc_ja_caps_esc_hz">日本語(親指CTRL) [Caps]→[半/全] [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_ja_caps"               >日本語 [Caps]→[半/全]</string>
+    <string name="keyboard_layout_ja_caps_esc_hz"        >日本語 [Caps]→[半/全] [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_tc_ja_oadg">日本語(親指CTRL) (日本語配列OADG)</string>
-    <string name="keyboard_layout_tc_custom">日本語(親指CTRL) (カスタム)</string>
+    <string name="keyboard_layout_tc_ja"                 >日本語+親指CTRL [Caps]→[Ctrl]</string>
+    <string name="keyboard_layout_tc_ja_esc_hz"          >日本語+親指CTRL [Caps]→[Ctrl] [ESC]⇔[半/全]</string>
+
+    <string name="keyboard_layout_tc_ja_caps_ctrl"       >日本語+親指CTRL [Caps]⇔[Ctrl]</string>
+    <string name="keyboard_layout_tc_ja_caps_ctrl_esc_hz">日本語+親指CTRL [Caps]⇔[Ctrl] [ESC]⇔[半/全]</string>
+
+    <string name="keyboard_layout_tc_ja_caps"            >日本語+親指CTRL [Caps]→[半/全]</string>
+    <string name="keyboard_layout_tc_ja_caps_esc_hz"     >日本語+親指CTRL [Caps]→[半/全] [ESC]⇔[半/全]</string>
 
     <string name="scroll_to_top">先頭</string>
     <string name="scroll_to_bottom">末尾</string>
     <string name="quit">終了</string>
-    <string name="query_quit">終了します</string>
+    <string name="query_quit">このアプリを終了します.</string>
 </resources>
