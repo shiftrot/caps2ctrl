@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ThumbCtrl (JA)</string>
-    <string name="keyboard_layouts_label">ThumbCtrl (JA)</string>
+    <string name="app_name">KCM Remap</string>
+    <string name="keyboard_layouts_label">KCM Remap (JP)</string>
     <string name="description_html">tcja.ja.html</string>
 
     <string name="keyboard_layout_ja"                    >Japanese [Caps]→[Ctrl]</string>

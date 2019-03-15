@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">親指Ctrl (英語配列)</string>
-    <string name="keyboard_layouts_label">親指Ctrl</string>
+    <string name="app_name">KCMリマップ(英語配列)</string>
     <string name="description_html">tcen.ja.html</string>
 
     <string name="keyboard_layout_en"                       >英語配列 [Caps]→[Ctrl]</string>
