@@ -1,32 +1,39 @@
-# What is this:
+# What is this:<a name="summary"></a>
 This application adds a keyboard layout (English, US, qwerty) which changed "Caps Lock" to "Ctrl" for the physical keyboard.
 Also add a keyboard layout to swap "ESC" and "\`".
 
 - English (US)
-|#[ESC]-[\`] |#[CapsLock] |#Left Ctrl   |#Menu key   |
-|            |   [Ctrl]   |             | [CapsLock] |
-|    Swap    |   [Ctrl]   |             | [CapsLock] |
-|            |   [Ctrl]   | [Caps Lock] |            |
-|    Swap    |   [Ctrl]   | [Caps Lock] |            |
+|:#[CapsLock]:|:#Left Ctrl:|:#[ESC]-[\`]:|:#Menu key :|
+|:           :|:          :|:           :|:          :|
+|:           :|:          :|:   Swap    :|:          :|
+|:  [Ctrl]   :|:[CapsLock]:|:           :|:          :|
+|:  [Ctrl]   :|:[CapsLock]:|:   Swap    :|:          :|
+|:  [Ctrl]   :|:          :|:           :|:[CapsLock]:|
+|:  [Ctrl]   :|:          :|:   Swap    :|:[CapsLock]:|
 - Instead of the menu key, you can use "[Ctrl] + [ESC]".
 - The other keyboard layouts are added as "Japanese (EN)" or "ThumbCtrl (EN)" but these are for Japanese keyboard.
 
-# How to use:
+# How to use:<a name="setting"></a>
 + <strong>Connect a physical keyboard.</strong>
 + Open Android "Settings"
-+ "Languages & input"
++ "Languages & input (System)"
 + "Physical keyboard (keyboard device name)"
-+ Choose keyboard layout.
- * Depending on the Android version, the setting location may be different or layout setting may be required for each keyboard application.
++ <strong>"Choose keyboard layout."</strong>
 It is also available from the following link =>
 - 「&<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">Physical keyboard&</a>」
 - 「&<a href="ACTION_SETTINGS/ACTION_ALT_INPUT_SETTINGS">Languages and input&</a>」
 
-## !!! Caution !!!
-If "Choose Keyboard Layout" does not exist, please contact your Android device customer support. (Your Android device prohibits changing settings. So this application can not change it)
+&&<textarea name="example" cols="50" rows="3">
+&&Input test text area.
+&&</textarea>
+
+## &<font color="red">!!! Caution !!!&</font>
+<strong>If "Choose Keyboard Layout" does not exist, please contact your Android device customer support. </strong>(Your Android device prohibits changing settings. So this application can not change it)
+
+ * Depending on the Android version, the setting location may be different or layout setting may be required for each keyboard application.
  * This software uses 'User installable keymap' (Android 4.1 and up).
 
-# Appendix
+# About:<a name="about"></a>
 This software is an open source software.
 https://github.com/shiftrot/caps2ctrl
 
