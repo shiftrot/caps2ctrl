@@ -37,8 +37,6 @@ p.description {
 ========================================*/
 
 body.double div#main {
-	width: 75%;
-	float: left;
 	margin-right: -1px;
 	border-right: 1px solid #eee;
 	border-bottom: 1px solid #eee;
@@ -48,9 +46,7 @@ body.double div#main {
 ---------------*/
 
 body.double div#utilities {
-	width: 25%;
-	float: left;
-	clear: right;
+    display: none;
 }
 
 /*========================================
@@ -61,8 +57,6 @@ body.double div#utilities {
 ========================================*/
 
 body.double-l div#main {
-	width: 75%;
-	float: right;
 	margin-left: -1px;
 	border-left: 1px solid #eee;
 	border-bottom: 1px solid #eee;
@@ -72,9 +66,7 @@ body.double-l div#main {
 ---------------*/
 
 body.double-l div#utilities {
-	width: 25%;
-	float: right;
-	clear: left;
+    display: none;
 }
 
 /*========================================
@@ -141,7 +133,12 @@ blockquote  p {
 	margin-bottom: 0.5em;
 }
 
+code {
+	font-size: 100%;
+}
+
 pre {
+	font-size: 100%;
 	padding: 15px 20px;
 	border-top: 1px solid #cfe4e8;
 	border-left: 1px solid #cfe4e8;
@@ -155,6 +152,12 @@ pre {
 code {
 	color: #086dac;
 	background-color: #ebf1f2;
+}
+
+/* Text area
+---------------*/
+textarea {
+    font-size: 110%;
 }
 
 /* List
@@ -205,6 +208,30 @@ td {
 	border-right: 1px solid #eee;
 	border-top: 1px solid #eee;
 	overflow-wrap: break-word;
+}
+
+th.center {
+    text-align: center;
+}
+
+td.center {
+    text-align: center;
+}
+
+th.right {
+    text-align: right;
+}
+
+td.right {
+    text-align: right;
+}
+
+th.left {
+    text-align: left;
+}
+
+td.left {
+    text-align: left;
 }
 
 /* Others

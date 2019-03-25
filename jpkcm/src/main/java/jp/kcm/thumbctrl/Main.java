@@ -29,7 +29,7 @@ import java.util.Map;
 
 public class Main extends AppCompatActivity {
 
-    private static int mFontSize = 140;
+    private static int mFontSize = 160;
     private static int mInitialInterval = 400;
     private static int mNormalInterval = 100;
     private boolean mBack = false;
