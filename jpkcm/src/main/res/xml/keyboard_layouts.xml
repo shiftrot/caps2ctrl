@@ -13,6 +13,13 @@
             android:label="@string/keyboard_layout_tc_ja_caps_ctrl_esc_hz"
             android:keyboardLayout="@raw/tc_ja_caps_ctrl_esc_hz" />
 
+    <keyboard-layout android:name="keyboard_layout_ja_std"
+            android:label="@string/keyboard_layout_ja_std"
+            android:keyboardLayout="@raw/ja_std" />
+    <keyboard-layout android:name="keyboard_layout_ja_std_esc_hz"
+            android:label="@string/keyboard_layout_ja_std_esc_hz"
+            android:keyboardLayout="@raw/ja_std_esc_hz" />
+
     <keyboard-layout android:name="keyboard_layout_ja"
             android:label="@string/keyboard_layout_ja"
             android:keyboardLayout="@raw/ja" />
@@ -26,6 +33,13 @@
     <keyboard-layout android:name="keyboard_layout_ja_caps_esc_hz"
             android:label="@string/keyboard_layout_ja_caps_esc_hz"
             android:keyboardLayout="@raw/ja_caps_esc_hz" />
+
+    <keyboard-layout android:name="keyboard_layout_tc_ja_std"
+            android:label="@string/keyboard_layout_tc_ja_std"
+            android:keyboardLayout="@raw/tc_ja_std" />
+    <keyboard-layout android:name="keyboard_layout_tc_ja_std_esc_hz"
+            android:label="@string/keyboard_layout_tc_ja_std_esc_hz"
+            android:keyboardLayout="@raw/tc_ja_std_esc_hz" />
 
     <keyboard-layout android:name="keyboard_layout_tc_ja"
             android:label="@string/keyboard_layout_tc_ja"

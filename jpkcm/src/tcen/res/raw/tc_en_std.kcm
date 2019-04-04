@@ -1,0 +1,40 @@
+type OVERLAY
+
+# https://android.googlesource.com/platform/frameworks/base/+/jb-release/include/androidfw/KeycodeLabels.h
+
+key ZENKAKU_HANKAKU {
+    base:  fallback ZENKAKU_HANKAKU
+    alt:   fallback SWITCH_CHARSET
+    shift: '~'
+    ctrl:  '`'
+}
+
+# https://android.googlesource.com/platform/frameworks/base/+/cd92588/data/keyboards/Generic.kl
+
+map key 1   ESCAPE            # ESCAPE
+map key 41  GRAVE             # GRAVE
+map key 58  CAPS_LOCK         # CAPS_LOCK
+map key 29  CTRL_LEFT         # CTRL_LEFT
+map key 127 MENU              # MENU
+
+map key 92  CTRL_RIGHT        # HENKAN
+map key 93  ZENKAKU_HANKAKU   # KATAKANA_HIRAGANA
+map key 94  CTRL_LEFT         # MUHENKAN
+map key 122 ZENKAKU_HANKAKU   # KANA
+map key 123 MUHENKAN          # EISU
+
+# YEN -> GRAVE
+key YEN {
+    label:     '`'
+    base:      '`'
+    shift:     '~'
+    alt:       '\u0300'
+    alt+shift: '\u0303'
+}
+
+key RO {
+    label:     '\u00a5'
+    base:      '\u00a5'
+    shift:     '_'
+}
+

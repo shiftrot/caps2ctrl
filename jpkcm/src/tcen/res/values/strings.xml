@@ -4,6 +4,12 @@
     <string name="keyboard_layouts_label">Caps to Ctrl</string>
     <string name="description_html">tcen.en.html</string>
 
+    <string name="keyboard_layout_en_std"                   >English (US)</string>
+    <string name="keyboard_layout_en_std_hz"                >Japanese (EN) [`]→[H/Z]</string>
+
+    <string name="keyboard_layout_en_std_esc_grave"         >English (US) [ESC]⇔[`]</string>
+    <string name="keyboard_layout_en_std_esc_hz"            >Japanese (EN) [ESC]⇔[H/Z]</string>
+
     <string name="keyboard_layout_en"                       >English (US) [Caps]→[Ctrl]</string>
     <string name="keyboard_layout_en_hz"                    >Japanese (EN) [Caps]→[Ctrl] [`]→[H/Z]</string>
 
@@ -18,6 +24,12 @@
 
     <string name="keyboard_layout_en_caps_ctrl_hz"          >Japanese (EN) [Caps]⇔[Ctrl] [`]→[H/Z]</string>
     <string name="keyboard_layout_en_caps_ctrl_esc_hz"      >Japanese (EN) [Caps]⇔[Ctrl] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_tc_en_std"                >ThumbCtrl (EN)</string>
+    <string name="keyboard_layout_tc_en_std_hz"             >ThumbCtrl (EN) [`]→[H/Z]</string>
+
+    <string name="keyboard_layout_tc_en_std_esc_grave"      >ThumbCtrl (EN) [ESC]⇔[`]</string>
+    <string name="keyboard_layout_tc_en_std_esc_hz"         >ThumbCtrl (EN) [ESC]⇔[H/Z]</string>
 
     <string name="keyboard_layout_tc_en"                    >ThumbCtrl (EN) [Caps]→[Ctrl]</string>
     <string name="keyboard_layout_tc_en_hz"                 >ThumbCtrl (EN) [Caps]→[Ctrl] [`]→[H/Z]</string>

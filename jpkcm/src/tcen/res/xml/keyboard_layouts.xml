@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard-layouts xmlns:android="http://schemas.android.com/apk/res/android">
+    <keyboard-layout android:name="keyboard_layout_en_std"
+            android:label="@string/keyboard_layout_en_std"
+            android:keyboardLayout="@raw/en_std" />
+    <keyboard-layout android:name="keyboard_layout_en_std_hz"
+            android:label="@string/keyboard_layout_en_std_hz"
+            android:keyboardLayout="@raw/en_std_hz" />
+
+    <keyboard-layout android:name="keyboard_layout_en_std_esc_grave"
+            android:label="@string/keyboard_layout_en_std_esc_grave"
+            android:keyboardLayout="@raw/en_std_esc_grave" />
+    <keyboard-layout android:name="keyboard_layout_en_std_esc_hz"
+            android:label="@string/keyboard_layout_en_std_esc_hz"
+            android:keyboardLayout="@raw/en_std_esc_hz" />
+
     <keyboard-layout android:name="keyboard_layout_en"
             android:label="@string/keyboard_layout_en"
             android:keyboardLayout="@raw/en" />
@@ -34,6 +48,20 @@
     <keyboard-layout android:name="keyboard_layout_en_caps_ctrl_esc_hz"
             android:label="@string/keyboard_layout_en_caps_ctrl_esc_hz"
             android:keyboardLayout="@raw/en_caps_ctrl_esc_hz" />
+
+    <keyboard-layout android:name="keyboard_layout_tc_en_std"
+            android:label="@string/keyboard_layout_tc_en_std"
+            android:keyboardLayout="@raw/tc_en_std" />
+    <keyboard-layout android:name="keyboard_layout_tc_en_std_hz"
+            android:label="@string/keyboard_layout_tc_en_std_hz"
+            android:keyboardLayout="@raw/tc_en_std_hz" />
+
+    <keyboard-layout android:name="keyboard_layout_tc_en_std_esc_grave"
+            android:label="@string/keyboard_layout_tc_en_std_esc_grave"
+            android:keyboardLayout="@raw/tc_en_std_esc_grave" />
+    <keyboard-layout android:name="keyboard_layout_tc_en_std_esc_hz"
+            android:label="@string/keyboard_layout_tc_en_std_esc_hz"
+            android:keyboardLayout="@raw/tc_en_std_esc_hz" />
 
     <keyboard-layout android:name="keyboard_layout_tc_en"
             android:label="@string/keyboard_layout_tc_en"

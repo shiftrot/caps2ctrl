@@ -4,6 +4,9 @@
     <string name="keyboard_layouts_label">KCM Remap (JP)</string>
     <string name="description_html">tcja.ja.html</string>
 
+    <string name="keyboard_layout_ja_std"                >Japanese</string>
+    <string name="keyboard_layout_ja_std_esc_hz"         >Japanese [ESC]⇔[H/Z]</string>
+
     <string name="keyboard_layout_ja"                    >Japanese [Caps]→[Ctrl]</string>
     <string name="keyboard_layout_ja_esc_hz"             >Japanese [Caps]→[Ctrl] [ESC]⇔[H/Z]</string>
 
@@ -12,6 +15,9 @@
 
     <string name="keyboard_layout_ja_caps"               >Japanese [Caps]→[H/Z]</string>
     <string name="keyboard_layout_ja_caps_esc_hz"        >Japanese [Caps]→[H/Z] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_tc_ja_std"             >ThumbCtrl (JA)</string>
+    <string name="keyboard_layout_tc_ja_std_esc_hz"      >ThumbCtrl (JA) [ESC]⇔[半/全]</string>
 
     <string name="keyboard_layout_tc_ja"                 >ThumbCtrl (JA) [Caps]→[Ctrl]</string>
     <string name="keyboard_layout_tc_ja_esc_hz"          >ThumbCtrl (JA) [Caps]→[Ctrl] [ESC]⇔[H/Z]</string>
