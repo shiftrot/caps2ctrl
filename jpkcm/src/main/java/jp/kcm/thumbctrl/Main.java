@@ -53,13 +53,13 @@ public class Main extends AppCompatActivity {
         mWebView.getSettings().setAllowFileAccess(true);
         mPrefValue = new PrefValue(this);
         mFontSize = mPrefValue.getInt(PREFKEY_FONTSIZE, mFontSize);
+        // mWebView.getSettings().setCacheMode(LOAD_NO_CACHE);
         mWebView.getSettings().setTextZoom(mFontSize);
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
                 if (mBack && url.startsWith("file:")) {
-                    mWebView.reload();
                     mBack = false;
                 }
             }
