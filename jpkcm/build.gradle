@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     defaultConfig {
         applicationId "jp.kcm.thumbctrl"
 
         minSdkVersion 16
-        targetSdkVersion 28
-        versionCode 34
-        versionName "1.4"
+        targetSdkVersion 30
+        versionCode 35
+        versionName "1.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -24,7 +24,7 @@ android {
         }
         beta {
             dimension "default"
-            setVersionCode(1034)
+            setVersionCode(1035)
         }
         tcen {
             dimension "default"
@@ -38,6 +38,6 @@ dependencies {
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0-alpha4', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.13'
 }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ThumbCtrl.iml" filepath="$PROJECT_DIR$/ThumbCtrl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jpkcm/jpkcm.iml" filepath="$PROJECT_DIR$/jpkcm/jpkcm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caps2ctrl.iml" filepath="$PROJECT_DIR$/caps2ctrl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.iml" filepath="$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.iml" />
     </modules>
   </component>
 </project>
