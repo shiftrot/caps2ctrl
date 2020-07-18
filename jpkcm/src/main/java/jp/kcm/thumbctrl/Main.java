@@ -29,7 +29,7 @@ import java.util.Map;
 
 public class Main extends AppCompatActivity {
 
-    private static int mFontSize = 160;
+    private static int mFontSize = 80;
     private static int mInitialInterval = 400;
     private static int mNormalInterval = 100;
     private boolean mBack = false;
@@ -72,10 +72,9 @@ public class Main extends AppCompatActivity {
 
             @SuppressWarnings("deprecation")
             @Override
-            public boolean shouldOverrideUrlLoading(WebView wevView, String url) {
-                return overrideUrlLoading(wevView, url);
+            public boolean shouldOverrideUrlLoading(WebView webView, String url) {
+                return overrideUrlLoading(webView, url);
             }
-
         });
         setButtonListener();
 
@@ -91,12 +90,12 @@ public class Main extends AppCompatActivity {
             }
             String url = bundle.getString("url");
             if ((url == null) || (!load(mWebView, url, mWebView.getUrl()))) {
-                Log.d("WebViewAcitivity", "Load error : "+url);
+                Log.d("WebViewAcitivity", "Load error : " + url);
             }
         }
 
         String html = getString(R.string.description_html);
-        mWebView.loadUrl("file:///android_asset/"+html);
+        mWebView.loadUrl("file:///android_asset/" + html);
     }
 
     private void setButtonListener() {
@@ -117,7 +116,7 @@ public class Main extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.webview_back:
-                    if (mWebView.canGoBack()){
+                    if (mWebView.canGoBack()) {
                         mBack = true;
                         mWebView.goBack();
                     } else {
@@ -126,7 +125,7 @@ public class Main extends AppCompatActivity {
                     }
                     break;
                 case R.id.webview_forward:
-                    if (mWebView.canGoForward()){
+                    if (mWebView.canGoForward()) {
                         mWebView.goForward();
                     }
                     break;
@@ -187,7 +186,7 @@ public class Main extends AppCompatActivity {
 
     private void menu() {
         String[] items = {getString(R.string.scroll_to_top), getString(R.string.scroll_to_bottom), getString(R.string.quit)};
-        final int quit = items.length-1;
+        final int quit = items.length - 1;
         new AlertDialog.Builder(mWebView.getContext())
                 .setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
                     @Override
@@ -208,8 +207,8 @@ public class Main extends AppCompatActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if(keyCode == KeyEvent.KEYCODE_BACK){
-            if (mWebView.canGoBack()){
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if (mWebView.canGoBack()) {
                 mBack = true;
                 mWebView.goBack();
                 return true;
@@ -229,8 +228,8 @@ public class Main extends AppCompatActivity {
             return true;
         }
         try {
-            File html = new File (url);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(html),"UTF-8"));
+            File html = new File(url);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(html), "UTF-8"));
             StringBuilder buffer = new StringBuilder();
             String str;
             while ((str = reader.readLine()) != null) {
@@ -238,7 +237,7 @@ public class Main extends AppCompatActivity {
                 buffer.append(System.getProperty("line.separator"));
             }
             String data = buffer.toString();
-            webView.loadDataWithBaseURL("file://"+url, data, "text/html", "UTF-8", prev);
+            webView.loadDataWithBaseURL("file://" + url, data, "text/html", "UTF-8", prev);
             return true;
         } catch (Exception e) {
             Log.d("WebViewAcitivity", e.getMessage());
@@ -296,7 +295,7 @@ public class Main extends AppCompatActivity {
         if (!url.startsWith(ANDROID_SETTINGS)) {
             return false;
         }
-        url = url.replaceFirst(ANDROID_SETTINGS+"/?", "");
+        url = url.replaceFirst(ANDROID_SETTINGS + "/?", "");
         String action = getSettingsAction(url);
 
         if (url.equals("ACTION_ALT_INPUT_SETTINGS")) {
