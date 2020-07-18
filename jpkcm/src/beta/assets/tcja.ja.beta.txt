@@ -1,15 +1,7 @@
-# 目次:<a name="contents"></a>
-- 「&<a href="#summary">概要&</a>」
-- 「&<a href="#setting">設定&</a>」
-- 「&<a href="#layout">レイアウト&</a>」
-- 「&<a href="#appendix">補足&</a>」
-
 # 概要:<a name="summary"></a>
-本アプリは各種「&<a href="#layout">日本語キーボードレイアウト&</a>」を追加して、物理キーボード(日本語配列)の刻印どおりの入力と特殊キーの入替を可能にします。
+本アプリは物理キーボード用に各種「キーボードレイアウト」を追加して、物理キーボード(日本語配列)の刻印どおりの入力と特殊キーの入替を可能にします。
 ※ 親指シフトやかな入力を実現するためのものではありません。
-
-## 英語配列レイアウト
-日本語配列レイアウトではなく英語配列レイアウトが必要な場合は「&<a href="https://play.google.com/store/apps/details?id=jp.kcm.thumbctrl.en.layout">ハードウェアキーボード配列変更 (+親指Ctrl) [英語配列]&</a>」を使用してください。
+※ 英語配列のままCtrlとCapsの入れ替えなどを行うアプリは別アプリとして配布しています。
 
 # 設定:<a name="setting"></a>
 + <strong>物理キーボードを接続する</strong>
@@ -17,7 +9,6 @@
 + 「言語と入力 (システム)」
 + 「物理キーボード (キーボードの機種名)」
 + <strong>「キーボードレイアウトの選択」</strong>
-    各レイアウトの詳細は「&<a href="#layout">レイアウト&</a>」を参照してください。
 以下のリンクからも設定を行えます。
 - 「&<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">物理キーボード設定&</a>」
 - 「&<a href="ACTION_SETTINGS/ACTION_ALT_INPUT_SETTINGS">言語と入力&</a>」
@@ -25,6 +16,8 @@
 &&<textarea name="example" cols="50" rows="4">
 &&入力テスト用テキストエリア
 &&</textarea>
+
+各レイアウトの詳細は「&<a href="#layout">レイアウト&</a>」を参照してください。
 
 ## &<font color="red">!!! 注意 !!!&</font>
 <strong>「キーボードレイアウトの選択」自体が存在しない場合は、使用しているAndroid端末のカスタマーサポートへお問い合わせください。</strong>(Android端末のメーカーによって設定変更を禁止されているので、本アプリでは対処できません)

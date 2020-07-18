@@ -19,6 +19,7 @@ Also add a keyboard layout to swap "ESC" and "\`".
 + "Languages & input (System)"
 + "Physical keyboard (keyboard device name)"
 + <strong>"Choose keyboard layout."</strong>
+
 It is also available from the following link =>
 - 「&<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">Physical keyboard&</a>」
 - 「&<a href="ACTION_SETTINGS/ACTION_ALT_INPUT_SETTINGS">Languages and input&</a>」

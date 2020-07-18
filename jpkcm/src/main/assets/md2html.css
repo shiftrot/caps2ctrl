@@ -5,6 +5,8 @@
  * let MdHtml_cssname = '%BASEDIR%/md2html.css'
  */
 
+* {max-height:999999px}
+
 body {
 	font:100% meiryo,arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;
 	line-height: 1.4em
@@ -13,6 +15,17 @@ body {
 	background-image: url(images/bg_body.png);
 	background-repeat: repeat;
 	*/
+}
+
+pre,
+code,
+var,
+samp,
+kbd,
+tt {
+	font-family: monospace, serif;
+	_font-family: 'courier new', monospace;
+	font-size: 1.0rem;
 }
 
 p.siteName {
@@ -37,6 +50,8 @@ p.description {
 ========================================*/
 
 body.double div#main {
+	width: 75%;
+	float: left;
 	margin-right: -1px;
 	border-right: 1px solid #eee;
 	border-bottom: 1px solid #eee;
@@ -46,7 +61,9 @@ body.double div#main {
 ---------------*/
 
 body.double div#utilities {
-    display: none;
+	width: 25%;
+	float: left;
+	clear: right;
 }
 
 /*========================================
@@ -57,6 +74,8 @@ body.double div#utilities {
 ========================================*/
 
 body.double-l div#main {
+	width: 75%;
+	float: right;
 	margin-left: -1px;
 	border-left: 1px solid #eee;
 	border-bottom: 1px solid #eee;
@@ -66,7 +85,9 @@ body.double-l div#main {
 ---------------*/
 
 body.double-l div#utilities {
-    display: none;
+	width: 25%;
+	float: right;
+	clear: left;
 }
 
 /*========================================
@@ -133,12 +154,7 @@ blockquote  p {
 	margin-bottom: 0.5em;
 }
 
-code {
-	font-size: 100%;
-}
-
 pre {
-	font-size: 100%;
 	padding: 15px 20px;
 	border-top: 1px solid #cfe4e8;
 	border-left: 1px solid #cfe4e8;
@@ -157,7 +173,7 @@ code {
 /* Text area
 ---------------*/
 textarea {
-    font-size: 110%;
+	font-size: 110%;
 }
 
 /* List
