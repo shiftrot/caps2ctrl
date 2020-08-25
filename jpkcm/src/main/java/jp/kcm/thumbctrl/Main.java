@@ -13,6 +13,7 @@ import android.provider.Settings;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -36,7 +37,8 @@ public class Main extends AppCompatActivity {
     private WebView mWebView;
     private PrefValue mPrefValue;
     private final String PREFKEY_FONTSIZE = "fontsize";
-    private Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler();
+
     @SuppressLint({"SetJavaScriptEnabled", "NewApi"})
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -70,7 +72,6 @@ public class Main extends AppCompatActivity {
                 return overrideUrlLoading(webView, url);
             }
 
-            @SuppressWarnings("deprecation")
             @Override
             public boolean shouldOverrideUrlLoading(WebView webView, String url) {
                 return overrideUrlLoading(webView, url);
@@ -114,51 +115,39 @@ public class Main extends AppCompatActivity {
     View.OnClickListener mButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.webview_back:
-                    if (mWebView.canGoBack()) {
-                        mBack = true;
-                        mWebView.goBack();
-                    } else {
-                        mWebView.stopLoading();
-                        finish();
-                    }
-                    break;
-                case R.id.webview_forward:
-                    if (mWebView.canGoForward()) {
-                        mWebView.goForward();
-                    }
-                    break;
-                case R.id.webview_plus:
-                    mWebView.getSettings().setTextZoom(mWebView.getSettings().getTextZoom() + 10);
-                    mFontSize = mWebView.getSettings().getTextZoom();
-                    mPrefValue.setInt(PREFKEY_FONTSIZE, mFontSize);
-                    break;
-                case R.id.webview_minus:
-                    mWebView.getSettings().setTextZoom(mWebView.getSettings().getTextZoom() - 10);
-                    mFontSize = mWebView.getSettings().getTextZoom();
-                    mPrefValue.setInt(PREFKEY_FONTSIZE, mFontSize);
-                    break;
-                case R.id.webview_reload:
-                    mWebView.reload();
-                    break;
-                case R.id.webview_abort:
+            int id = v.getId();
+            if (id == R.id.webview_back) {
+                if (mWebView.canGoBack()) {
+                    mBack = true;
+                    mWebView.goBack();
+                } else {
                     mWebView.stopLoading();
-                    break;
-                case R.id.webview_page_up:
-                    mWebView.pageUp(false);
-                    break;
-                case R.id.webview_page_down:
-                    mWebView.pageDown(false);
-                    break;
-                case R.id.webview_menu:
-                    menu();
-                    break;
-                case R.id.webview_quit:
-                    confirmQuit();
-                    break;
-                default:
-                    break;
+                    finish();
+                }
+            } else if (id == R.id.webview_forward) {
+                if (mWebView.canGoForward()) {
+                    mWebView.goForward();
+                }
+            } else if (id == R.id.webview_plus) {
+                mWebView.getSettings().setTextZoom(mWebView.getSettings().getTextZoom() + 10);
+                mFontSize = mWebView.getSettings().getTextZoom();
+                mPrefValue.setInt(PREFKEY_FONTSIZE, mFontSize);
+            } else if (id == R.id.webview_minus) {
+                mWebView.getSettings().setTextZoom(mWebView.getSettings().getTextZoom() - 10);
+                mFontSize = mWebView.getSettings().getTextZoom();
+                mPrefValue.setInt(PREFKEY_FONTSIZE, mFontSize);
+            } else if (id == R.id.webview_reload) {
+                mWebView.reload();
+            } else if (id == R.id.webview_abort) {
+                mWebView.stopLoading();
+            } else if (id == R.id.webview_page_up) {
+                mWebView.pageUp(false);
+            } else if (id == R.id.webview_page_down) {
+                mWebView.pageDown(false);
+            } else if (id == R.id.webview_menu) {
+                menu();
+            } else if (id == R.id.webview_quit) {
+                confirmQuit();
             }
         }
     };
@@ -175,10 +164,10 @@ public class Main extends AppCompatActivity {
         b.setIcon(android.R.drawable.ic_dialog_alert);
         b.setMessage(R.string.query_quit);
         b.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-           public void onClick(DialogInterface dialog, int id) {
-               dialog.dismiss();
-               mHandler.post(mFinish);
-           }
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.dismiss();
+                mHandler.post(mFinish);
+            }
         });
         b.setNegativeButton(android.R.string.no, null);
         b.show();
@@ -315,11 +304,11 @@ public class Main extends AppCompatActivity {
 
     private boolean openLanguageAndInputSettigns() {
         Intent intent = new Intent();
-        intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$InputMethodAndLanguageSettingsActivity" ));
+        intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.Settings$InputMethodAndLanguageSettingsActivity"));
         if (!startIntent(intent)) {
             intent = new Intent();
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$LanguageAndInputSettingsActivity" ));
+            intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.Settings$LanguageAndInputSettingsActivity"));
             if (!startIntent(intent)) {
                 intent = new Intent(Settings.ACTION_SETTINGS);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
