@@ -7,8 +7,8 @@ android {
 
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 35
-        versionName "1.5"
+        versionCode 36
+        versionName "1.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -24,7 +24,7 @@ android {
         }
         beta {
             dimension "default"
-            setVersionCode(1035)
+            setVersionCode(1036)
         }
         tcen {
             dimension "default"
