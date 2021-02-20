@@ -18,8 +18,11 @@ map key 127 CAPS_LOCK         # MENU
 map key 92  HENKAN            # HENKAN
 map key 93  ZENKAKU_HANKAKU   # KATAKANA_HIRAGANA
 map key 94  MUHENKAN          # MUHENKAN
-map key 122 HENKAN            # KANA
-map key 123 MUHENKAN          # EISU
+map key 100 ALT_RIGHT         # ALT_RIGHT
+map key 122 ZENKAKU_HANKAKU   # KANA
+map key 123 CAPS_LOCK         # EISU
+map key 125 META_LEFT         # META_LEFT
+map key 126 ZENKAKU_HANKAKU   # META_RIGHT
 
 key 1 {
   label:           '1'
