@@ -45,4 +45,46 @@
 
     <string name="keyboard_layout_tc_en_caps"               >ThumbCtrl (EN) [Caps]→[H/Z]</string>
     <string name="keyboard_layout_tc_en_esc_grave_caps"     >ThumbCtrl (EN) [Caps]→[H/Z] [ESC]⇔[`]</string>
+
+    <string name="keyboard_layout_ra_en_std"                   >English (US)</string>
+    <string name="keyboard_layout_ra_en_std_hz"                >Japanese (EN) [R-Alt]→[H/Z] [`]→[H/Z]</string>
+
+    <string name="keyboard_layout_ra_en_std_esc_grave"         >English (US) [R-Alt]→[H/Z] [ESC]⇔[`]</string>
+    <string name="keyboard_layout_ra_en_std_esc_hz"            >Japanese (EN) [R-Alt]→[H/Z] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_ra_en"                       >English (US) [R-Alt]→[H/Z] [Caps]→[Ctrl]</string>
+    <string name="keyboard_layout_ra_en_hz"                    >Japanese (EN) [R-Alt]→[H/Z] [Caps]→[Ctrl] [`]→[H/Z]</string>
+
+    <string name="keyboard_layout_ra_en_esc_grave"             >English (US) [R-Alt]→[H/Z] [Caps]→[Ctrl] [ESC]⇔[`]</string>
+    <string name="keyboard_layout_ra_en_esc_hz"                >Japanese (EN) [R-Alt]→[H/Z] [Caps]→[Ctrl] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_ra_en_caps"                  >Japanese (EN) [R-Alt]→[H/Z] [Caps]→[H/Z]</string>
+    <string name="keyboard_layout_ra_en_esc_grave_caps"        >Japanese (EN) [R-Alt]→[H/Z] [Caps]→[H/Z] [ESC]⇔[`]</string>
+
+    <string name="keyboard_layout_ra_en_caps_ctrl"             >English (US) [R-Alt]→[H/Z] [Caps]⇔[Ctrl]</string>
+    <string name="keyboard_layout_ra_en_caps_ctrl_esc_grave"   >English (US) [R-Alt]→[H/Z] [Caps]⇔[Ctrl] [ESC]⇔[`]</string>
+
+    <string name="keyboard_layout_ra_en_caps_ctrl_hz"          >Japanese (EN) [R-Alt]→[H/Z] [Caps]⇔[Ctrl] [`]→[H/Z]</string>
+    <string name="keyboard_layout_ra_en_caps_ctrl_esc_hz"      >Japanese (EN) [R-Alt]→[H/Z] [Caps]⇔[Ctrl] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_ra_tc_en_std"                >ThumbCtrl (EN)</string>
+    <string name="keyboard_layout_ra_tc_en_std_hz"             >ThumbCtrl (EN) [R-Alt]→[H/Z] [`]→[H/Z]</string>
+
+    <string name="keyboard_layout_ra_tc_en_std_esc_grave"      >ThumbCtrl (EN) [R-Alt]→[H/Z] [ESC]⇔[`]</string>
+    <string name="keyboard_layout_ra_tc_en_std_esc_hz"         >ThumbCtrl (EN) [R-Alt]→[H/Z] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_ra_tc_en"                    >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]→[Ctrl]</string>
+    <string name="keyboard_layout_ra_tc_en_hz"                 >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]→[Ctrl] [`]→[H/Z]</string>
+
+    <string name="keyboard_layout_ra_tc_en_esc_grave"          >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]→[Ctrl] [ESC]⇔[`]</string>
+    <string name="keyboard_layout_ra_tc_en_esc_hz"             >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]→[Ctrl] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_ra_tc_en_caps_ctrl"          >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]⇔[Ctrl]</string>
+    <string name="keyboard_layout_ra_tc_en_caps_ctrl_esc_grave">ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]⇔[Ctrl] [ESC]⇔[`]</string>
+
+    <string name="keyboard_layout_ra_tc_en_caps_ctrl_hz"       >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]⇔[Ctrl] [`]→[H/Z]</string>
+    <string name="keyboard_layout_ra_tc_en_caps_ctrl_esc_hz"   >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]⇔[Ctrl] [ESC]⇔[H/Z]</string>
+
+    <string name="keyboard_layout_ra_tc_en_caps"               >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]→[H/Z]</string>
+    <string name="keyboard_layout_ra_tc_en_esc_grave_caps"     >ThumbCtrl (EN) [R-Alt]→[H/Z] [Caps]→[H/Z] [ESC]⇔[`]</string>
 </resources>

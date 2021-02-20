@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">KCMリマップ</string>
-    <string name="keyboard_layouts_label">KCMリマップ(+親指Ctrl)</string>
+    <string name="keyboard_layouts_label">KCMリマップ</string>
     <string name="description_html">tcja.ja.html</string>
 
-    <string name="keyboard_layout_ja_std"                >日本語</string>
-    <string name="keyboard_layout_ja_std_esc_hz"         >日本語 [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_ja_std"                >日本語配列</string>
+    <string name="keyboard_layout_ja_std_esc_hz"         >日: [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_ja"                    >日本語 [Caps]→[Ctrl]</string>
-    <string name="keyboard_layout_ja_esc_hz"             >日本語 [Caps]→[Ctrl] [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_ja"                    >日: [Caps]→[Ctrl]</string>
+    <string name="keyboard_layout_ja_esc_hz"             >日: [Caps]→[Ctrl] [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_ja_caps_ctrl"          >日本語 [Caps]⇔[Ctrl]</string>
-    <string name="keyboard_layout_ja_caps_ctrl_esc_hz"   >日本語 [Caps]⇔[Ctrl] [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_ja_caps_ctrl"          >日: [Caps]⇔[Ctrl]</string>
+    <string name="keyboard_layout_ja_caps_ctrl_esc_hz"   >日: [Caps]⇔[Ctrl] [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_ja_caps"               >日本語 [Caps]→[半/全]</string>
-    <string name="keyboard_layout_ja_caps_esc_hz"        >日本語 [Caps]→[半/全] [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_ja_caps"               >日: [Caps]→[半/全]</string>
+    <string name="keyboard_layout_ja_caps_esc_hz"        >日: [Caps]→[半/全] [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_tc_ja_std"             >日本語+親指Ctrl</string>
-    <string name="keyboard_layout_tc_ja_std_esc_hz"      >日本語+親指Ctrl [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_tc_ja_std"             >日: 親指Ctrl</string>
+    <string name="keyboard_layout_tc_ja_std_esc_hz"      >日: 親指Ctrl [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_tc_ja"                 >日本語+親指Ctrl [Caps]→[Ctrl]</string>
-    <string name="keyboard_layout_tc_ja_esc_hz"          >日本語+親指Ctrl [Caps]→[Ctrl] [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_tc_ja"                 >日: 親指Ctrl [Caps]→[Ctrl]</string>
+    <string name="keyboard_layout_tc_ja_esc_hz"          >日: 親指Ctrl [Caps]→[Ctrl] [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_tc_ja_caps_ctrl"       >日本語+親指Ctrl [Caps]⇔[Ctrl]</string>
-    <string name="keyboard_layout_tc_ja_caps_ctrl_esc_hz">日本語+親指Ctrl [Caps]⇔[Ctrl] [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_tc_ja_caps_ctrl"       >日: 親指Ctrl [Caps]⇔[Ctrl]</string>
+    <string name="keyboard_layout_tc_ja_caps_ctrl_esc_hz">日: 親指Ctrl [Caps]⇔[Ctrl] [ESC]⇔[半/全]</string>
 
-    <string name="keyboard_layout_tc_ja_caps"            >日本語+親指Ctrl [Caps]→[半/全]</string>
-    <string name="keyboard_layout_tc_ja_caps_esc_hz"     >日本語+親指Ctrl [Caps]→[半/全] [ESC]⇔[半/全]</string>
+    <string name="keyboard_layout_tc_ja_caps"            >日: 親指Ctrl [Caps]→[半/全]</string>
+    <string name="keyboard_layout_tc_ja_caps_esc_hz"     >日: 親指Ctrl [Caps]→[半/全] [ESC]⇔[半/全]</string>
 
     <string name="scroll_to_top">先頭</string>
     <string name="scroll_to_bottom">末尾</string>

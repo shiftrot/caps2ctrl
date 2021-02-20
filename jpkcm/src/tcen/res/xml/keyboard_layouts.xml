@@ -97,4 +97,102 @@
     <keyboard-layout android:name="keyboard_layout_tc_en_caps_ctrl_esc_hz"
             android:label="@string/keyboard_layout_tc_en_caps_ctrl_esc_hz"
             android:keyboardLayout="@raw/tc_en_caps_ctrl_esc_hz" />
+
+    <keyboard-layout android:name="keyboard_layout_ra_en_std"
+            android:label="@string/keyboard_layout_ra_en_std"
+            android:keyboardLayout="@raw/ra_en_std" />
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_en_std_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_en_std_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_en_std_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_en_std_esc_grave"
+            android:label="@string/keyboard_layout_ra_en_std_esc_grave"
+            android:keyboardLayout="@raw/ra_en_std_esc_grave" />
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_en_std_esc_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_en_std_esc_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_en_std_esc_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_en"
+            android:label="@string/keyboard_layout_ra_en"
+            android:keyboardLayout="@raw/ra_en" />
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_en_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_en_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_en_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_en_esc_grave"
+            android:label="@string/keyboard_layout_ra_en_esc_grave"
+            android:keyboardLayout="@raw/ra_en_esc_grave" />
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_en_esc_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_en_esc_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_en_esc_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_en_caps"
+            android:label="@string/keyboard_layout_ra_en_caps"
+            android:keyboardLayout="@raw/ra_en_caps" />
+    <keyboard-layout android:name="keyboard_layout_ra_en_esc_grave_caps"
+            android:label="@string/keyboard_layout_ra_en_esc_grave_caps"
+            android:keyboardLayout="@raw/ra_en_esc_grave_caps" />
+
+    <keyboard-layout android:name="keyboard_layout_ra_en_caps_ctrl"
+            android:label="@string/keyboard_layout_ra_en_caps_ctrl"
+            android:keyboardLayout="@raw/ra_en_caps_ctrl" />
+    <keyboard-layout android:name="keyboard_layout_ra_en_caps_ctrl_esc_grave"
+            android:label="@string/keyboard_layout_ra_en_caps_ctrl_esc_grave"
+            android:keyboardLayout="@raw/ra_en_caps_ctrl_esc_grave" />
+
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_en_caps_ctrl_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_en_caps_ctrl_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_en_caps_ctrl_hz" /> -->
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_en_caps_ctrl_esc_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_en_caps_ctrl_esc_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_en_caps_ctrl_esc_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_tc_en_std"
+            android:label="@string/keyboard_layout_ra_tc_en_std"
+            android:keyboardLayout="@raw/ra_tc_en_std" />
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_tc_en_std_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_tc_en_std_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_tc_en_std_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_tc_en_std_esc_grave"
+            android:label="@string/keyboard_layout_ra_tc_en_std_esc_grave"
+            android:keyboardLayout="@raw/ra_tc_en_std_esc_grave" />
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_tc_en_std_esc_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_tc_en_std_esc_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_tc_en_std_esc_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_tc_en"
+            android:label="@string/keyboard_layout_ra_tc_en"
+            android:keyboardLayout="@raw/ra_tc_en" />
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_tc_en_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_tc_en_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_tc_en_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_tc_en_esc_grave"
+            android:label="@string/keyboard_layout_ra_tc_en_esc_grave"
+            android:keyboardLayout="@raw/ra_tc_en_esc_grave" />
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_tc_en_esc_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_tc_en_esc_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_tc_en_esc_hz" /> -->
+
+    <keyboard-layout android:name="keyboard_layout_ra_tc_en_caps"
+            android:label="@string/keyboard_layout_ra_tc_en_caps"
+            android:keyboardLayout="@raw/ra_tc_en_caps" />
+    <keyboard-layout android:name="keyboard_layout_ra_tc_en_esc_grave_caps"
+            android:label="@string/keyboard_layout_ra_tc_en_esc_grave_caps"
+            android:keyboardLayout="@raw/ra_tc_en_esc_grave_caps" />
+
+    <keyboard-layout android:name="keyboard_layout_ra_tc_en_caps_ctrl"
+            android:label="@string/keyboard_layout_ra_tc_en_caps_ctrl"
+            android:keyboardLayout="@raw/ra_tc_en_caps_ctrl" />
+    <keyboard-layout android:name="keyboard_layout_ra_tc_en_caps_ctrl_esc_grave"
+            android:label="@string/keyboard_layout_ra_tc_en_caps_ctrl_esc_grave"
+            android:keyboardLayout="@raw/ra_tc_en_caps_ctrl_esc_grave" />
+
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_tc_en_caps_ctrl_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_tc_en_caps_ctrl_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_tc_en_caps_ctrl_hz" /> -->
+    <!-- <keyboard-layout android:name="keyboard_layout_ra_tc_en_caps_ctrl_esc_hz" -->
+    <!--         android:label="@string/keyboard_layout_ra_tc_en_caps_ctrl_esc_hz" -->
+    <!--         android:keyboardLayout="@raw/ra_tc_en_caps_ctrl_esc_hz" /> -->
 </keyboard-layouts>

@@ -27,11 +27,9 @@
 </div></div>
 <div class="section entry" id="e1"><h1><a href="#t1" title="t1" name="t1" id="t1">■ 概要:<a name="summary"></a></a></h1>
 <div class="textBody">
-<p>本アプリはAndroid端末に接続した物理キーボード用に、各種キーを入れ替えた「英語配列(US, qwerty)キーボードレイアウト」を追加します。<br />
-日本語配列の物理キーボードでも英語配列レイアウトで使用可能です。(変換/無変換/かなキー等も入れ替えできます)</p>
-
-<h2 id="j10"><a href="#h10" title="h10" name="h10" id="h10">■</a> 日本語配列レイアウト</h2>
-<p>英語配列レイアウトではなく日本語配列レイアウトで使用するためのアプリは別アプリとして配布しています。</p>
+本アプリは物理キーボード用に各種キーを入れ替えた「英語配列(US, qwerty)キーボードレイアウト」を追加します。<br />
+日本語配列の物理キーボードでも英語配列レイアウトで使用可能です。(変換/無変換/かなキー等を使用可能です)<br />
+※ 英語配列レイアウトではなく日本語配列レイアウトで使用するためのアプリは別アプリとして配布しています。<br />
 </div></div>
 <div class="section entry" id="e2"><h1><a href="#t2" title="t2" name="t2" id="t2">■ 設定:<a name="setting"></a></a></h1>
 <div class="textBody">
@@ -41,139 +39,145 @@
 </li><li> 「物理キーボード (キーボードの機種名)」
 </li><li> <strong>「キーボードレイアウトの選択」</strong>
 </li></ol>
-<p>以下のリンクからも設定を行えます。</p>
+以下のリンクからも設定を行えます。 (機種によって違いがあります)<br />
 <ul><li> 「<a href="ACTION_SETTINGS/ACTION_HARD_KEYBOARD_SETTINGS">物理キーボード設定</a>」
 </li><li> 「<a href="ACTION_SETTINGS/ACTION_ALT_INPUT_SETTINGS">言語と入力</a>」
 </li></ul>
-
+<br />
 <textarea name="example" cols="50" rows="4">
 入力テスト用テキストエリア
 </textarea>
-
-<p>各レイアウトの詳細は「<a href="#layout">レイアウト</a>」を参照してください。</p>
-
+<br />
+各レイアウトの詳細は「<a href="#layout">レイアウト</a>」を参照してください。<br />
+<br />
 <h2 id="j20"><a href="#h20" title="h20" name="h20" id="h20">■</a> <font color="red">!!! 注意 !!!</font></h2>
-<p><strong>「キーボードレイアウトの選択」自体が存在しない場合は、使用しているAndroid端末のカスタマーサポートへお問い合わせください。</strong>(Android端末のメーカーによって設定変更を禁止されているので、本アプリでは対処できません)</p>
-
-<p>※ Androidのバージョンによって設定場所が異なったり、キーボードアプリごとにレイアウト設定が必要な場合があります。<br />
-※ 本アプリは「User-installable keymaps」に対応したKCM(Key Character Map)ファイルを追加することでキーリマップを行うものです。(Android 4.1以降)</p>
+<strong>「キーボードレイアウトの選択」自体が存在しない場合は、使用しているAndroid端末のカスタマーサポートへお問い合わせください。</strong>(Android端末のメーカーによって設定変更を禁止されているので、本アプリでは対処できません)<br />
+<br />
+※ Androidのバージョンによって設定場所が異なったり、キーボードアプリごとにレイアウト設定が必要な場合があります。<br />
+※ 本アプリは「User-installable keymaps」に対応したKCM(Key Character Map)ファイルを追加することでキーリマップを行うものです。(Android 4.1以降)<br />
 </div></div>
 <div class="section entry" id="e3"><h1><a href="#t3" title="t3" name="t3" id="t3">■ レイアウト:<a name="layout"></a></a></h1>
 <div class="textBody">
-<p>追加される英語配列(US, qwerty)キーボードレイアウトの変更部分は以下のとおりです。<br />
-※ 日本語配列の物理キーボードで使用する場合は、機能割当表のタイトルヘッダ部分の[`]を[半/全]に読み替えてください。</p>
-
-<h2 id="j30"><a href="#h30" title="h30" name="h30" id="h30">■</a> 英語配列</h2>
+追加される「英語配列(US, qwerty)キーボードレイアウト」の独自変更部分は以下のとおりです。<br />
+※ 日本語配列の物理キーボードで使用する場合は、機能割当表のタイトルヘッダ部分の[`]を[半/全]に読み替えてください。<br />
+<br />
+<h2 id="j30"><a href="#h30" title="h30" name="h30" id="h30">■</a> 全レイアウト共通</h2>
+<table><tr><th class="center">メニューキー</th><th class="center">[右Meta] &nbsp;</th><th class="center">[カタカナ/ひらがな]</th></tr>
+<tr><td class="center"> [CapsLock] &nbsp;</td><td class="center"> &nbsp;[半/全] &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp;[半/全] &nbsp; &nbsp; &nbsp; </td></tr>
+</table>
+※ メニューキーは[Ctrl]+[ESC]で代用可能です。<br />
+※ [CapsLock]が存在するレイアウトでは、「メニューキー」を置き換えません。<br />
+※ [右Meta]は[右Windows]または[右Option]と同じキーです。<br />
+※ [右Alt]が[半/全]に設定されているレイアウトでは、[右Meta]を置き換えません。<br />
+<br />
+<h2 id="j31"><a href="#h31" title="h31" name="h31" id="h31">■</a> 英語配列</h2>
 <table><tr><th class="center">[CapsLock]</th><th class="center">[ESC] </th><th class="center">[`] </th><th class="center">[変換]/[無変換]</th></tr>
-<tr><td class="center">           </td><td class="center">       </td><td class="center">       </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">           </td><td class="center">       </td><td class="center">[半/全]</td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">           </td><td class="center">  [`] </td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">           </td><td class="center">[半/全]</td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">  [Ctrl]   </td><td class="center">       </td><td class="center">       </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">  [Ctrl]   </td><td class="center">       </td><td class="center">[半/全]</td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">  [Ctrl]   </td><td class="center">  [`] </td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">  [Ctrl]   </td><td class="center">[半/全]</td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">  [半/全]  </td><td class="center">       </td><td class="center">       </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">  [半/全]  </td><td class="center">  [`] </td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center">[半/全]</td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp;[`] </td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td><td class="center">[半/全]</td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp;[Ctrl] &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp;[Ctrl] &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center">[半/全]</td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp;[Ctrl] &nbsp; </td><td class="center"> &nbsp;[`] </td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp;[Ctrl] &nbsp; </td><td class="center">[半/全]</td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp;[半/全] &nbsp;</td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp;[半/全] &nbsp;</td><td class="center"> &nbsp;[`] </td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
 </table>
-
-<h2 id="j31"><a href="#h31" title="h31" name="h31" id="h31">■</a> 英語配列([Caps]⇔[Ctrl])</h2>
+<br />
+<h2 id="j32"><a href="#h32" title="h32" name="h32" id="h32">■</a> 英語配列([Caps]⇔[Ctrl])</h2>
 <table><tr><th class="center">[CapsLock]-[Ctrl]</th><th class="center">[ESC] </th><th class="center">[`] </th><th class="center">[変換]/[無変換]</th></tr>
-<tr><td class="center">       入替       </td><td class="center">       </td><td class="center">       </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">       入替       </td><td class="center">       </td><td class="center">[半/全]</td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">       入替       </td><td class="center"> [`]  </td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
-<tr><td class="center">       入替       </td><td class="center">[半/全]</td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp; &nbsp; &nbsp; 入替 &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp; &nbsp; &nbsp; 入替 &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; &nbsp; </td><td class="center">[半/全]</td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp; &nbsp; &nbsp; 入替 &nbsp; &nbsp; &nbsp; </td><td class="center"> [`] &nbsp;</td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
+<tr><td class="center"> &nbsp; &nbsp; &nbsp; 入替 &nbsp; &nbsp; &nbsp; </td><td class="center">[半/全]</td><td class="center"> [ESC] </td><td class="center"> [変換]/[無変換]</td></tr>
 </table>
-
-<h2 id="j32"><a href="#h32" title="h32" name="h32" id="h32">■</a> 英語配列+親指Ctrl</h2>
-<p>「英語配列+親指Ctrl」として追加される各レイアウトでは、[変換]/[無変換]を[Ctrl]に置き換えます。</p>
+<br />
+<h2 id="j33"><a href="#h33" title="h33" name="h33" id="h33">■</a> 英語配列+親指Ctrl</h2>
+「英語配列+親指Ctrl」として追加される各レイアウトでは、[変換]/[無変換]を[Ctrl]に置き換えます。<br />
 <table><tr><th class="center">[変換]/[無変換]</th></tr>
-<tr><td class="center">     [Ctrl]     </td></tr>
+<tr><td class="center"> &nbsp; &nbsp; [Ctrl] &nbsp; &nbsp; </td></tr>
 </table>
-<p>※ [変換]/[無変換]の代用については「<a href="#appendix">補足</a>」を参照してください。<br />
-※ 日本語配列の物理キーボード以外では「英語配列」レイアウトと使用上の違いはありません。</p>
-
-<h2 id="j33"><a href="#h33" title="h33" name="h33" id="h33">■</a> 共通</h2>
-<table><tr><th class="center">[カタカナ/ひらがな]</th><th class="center">メニューキー</th></tr>
-<tr><td class="center">      [半/全]       </td><td class="center"> [CapsLock]  </td></tr>
+※ [変換]/[無変換]の代用については「<a href="#appendix">補足</a>」を参照してください。<br />
+※ 日本語配列の物理キーボード以外では「英語配列」レイアウトと使用上の違いはありません。<br />
+<br />
+<h2 id="j34"><a href="#h34" title="h34" name="h34" id="h34">■</a> 右Alt</h2>
+[右Alt]を[半/全]に置き換えたレイアウトも追加されています。<br />
+<table><tr><th class="center">[右Alt]</th></tr>
+<tr><td class="center"> [半/全]</td></tr>
 </table>
-<p>※ メニューキーは[Ctrl]+[ESC]で代用可能です。<br />
-※ [CapsLock]が存在するレイアウトでは、「メニューキー」を置き換えません。</p>
-
-<h2 id="j34"><a href="#h34" title="h34" name="h34" id="h34">■</a> [`]の入力</h2>
-<p>英語配列(US)物理キーボードに、[`]キーを[半/全]として扱うレイアウトを使用すると[`]の入力ができなくなります。<br />
-ただし本レイアウトでは[半/全]等の設定を変更しているので、その場合でも[`]の入力を[Ctrl]+[半/全]で行うことができます。</p>
-<table><tr><th class="center">[Ctrl]+[半/全]</th><th class="center">[Shift]+[半/全]</th><th class="center">[￥]  </th></tr>
-<tr><td class="center">    [`]       </td><td class="center">     [~]        </td><td class="center">[`]/[~]</td></tr>
+<br />
+<h2 id="j35"><a href="#h35" title="h35" name="h35" id="h35">■</a> [`]の入力</h2>
+英語配列(US)物理キーボードで、[`]キーを[半/全]として扱うと[`]の入力ができなくなります。<br />
+ただし本レイアウトでは[半/全]の機能を変更しているので、[`]の入力を[Ctrl]+[半/全]で行うことができます。<br />
+<table><tr><th class="center">[Ctrl]+[半/全]</th><th class="center">[Shift]+[半/全]</th><th class="center">[￥] &nbsp;</th></tr>
+<tr><td class="center"> &nbsp; &nbsp;[`] &nbsp; &nbsp; &nbsp; </td><td class="center"> &nbsp; &nbsp; [~] &nbsp; &nbsp; &nbsp; &nbsp;</td><td class="center">[`]/[~]</td></tr>
 </table>
-<p>※ IMEによっては[Ctrl]+[半/全]と[Shift]+[半/全]の入力を受け付けないことがあります。<br />
-※ 日本語配列の物理キーボードでのみ、[`]の入力に[￥]キーが使用できます。</p>
-
-<h2 id="j35"><a href="#h35" title="h35" name="h35" id="h35">■</a> Apple社製キーボードの[英数]と[かな]</h2>
-<p>Apple社製日本語配列物理キーボードの[英数]と[かな]は押しっぱなしが出来ない特殊キーなので以下のように設定されます。</p>
-<ul><li> 英語配列
+※ IMEによっては[Ctrl]+[半/全]と[Shift]+[半/全]の入力を受け付けないことがあります。<br />
+※ 日本語配列の物理キーボードで本アプリのレイアウトを使用している場合は、[`]の入力に[￥]キーが使用できます。<br />
+<br />
+<h2 id="j36"><a href="#h36" title="h36" name="h36" id="h36">■</a> Apple社製キーボード</h2>
+<ul><li> [右Command]キーは[右Meta]キーとして動作します。
+</li><li> [右Alt]キーは[右Option]キーとして動作します。
 </li></ul>
-<table><tr><th class="center">[英数] </th><th class="center">[かな]</th></tr>
-<tr><td class="center">[無変換]</td><td class="center"> [変換]</td></tr>
-</table>
-
-<ul><li> 英語配列+親指Ctrl
-</li></ul>
-<table><tr><th class="center">[英数]  </th><th class="center">[かな]</th></tr>
-<tr><td class="center">[CapsLock]</td><td class="center">[半/全]</td></tr>
-</table>
-
-<ul><li> 英語配列+親指Ctrl (CapsLockが存在するレイアウト)
-</li></ul>
+<br />
+<h3 id="j37"><a href="#h37" title="h37" name="h37" id="h37">■</a> [英数]と[かな]</h3>
+Apple社製の日本語配列物理キーボードの[英数]と[かな]の設定は以下のようになります。<br />
+<br />
+<h4 id="j38"> [CapsLock]が存在する ("[Caps]→"を含まないレイアウト)</h4>
 <table><tr><th class="center">[英数] </th><th class="center">[かな]</th></tr>
 <tr><td class="center">[無変換]</td><td class="center">[半/全]</td></tr>
+</table>
+<br />
+<h4 id="j39"> [CapsLock]が存在しない ("[Caps]→"を含むレイアウト)</h4>
+<table><tr><th class="center">[英数] &nbsp;</th><th class="center">[かな]</th></tr>
+<tr><td class="center">[CapsLock]</td><td class="center">[半/全]</td></tr>
 </table>
 </div></div>
 <div class="section entry" id="e4"><h1><a href="#t4" title="t4" name="t4" id="t4">■ 補足:<a name="appendix"></a></a></h1>
 <div class="textBody">
-<p>「物理キーボード」からの「キーボードレイアウト」が無効化されている場合は、本アプリの配列変更は行えませんが、Google日本語入力やATOK passport等ではIMEアプリ自体の「設定」で日本語配列への変更は可能です。</p>
-
+「物理キーボード」からの「キーボードレイアウト」が無効化されている場合は、本アプリの配列変更は行えませんが、Google日本語入力やATOK passport等ではIMEアプリ自体の「設定」で日本語配列への変更は可能です。<br />
+<br />
 <h2 id="j40"><a href="#h40" title="h40" name="h40" id="h40">■</a> システム設定の切替</h2>
-<p>Androidのショートカットキーでレイアウト、言語、IMEを切り替えることができます。</p>
-<table><tr><th>レイアウト切替 </th><td> [Ctrl]+[Space]  </td><td> 複数レイアウトを選択している場合 </td></tr>
-<tr><th>言語切替       </th><td> [Shift]+[Space] </td><td> IMEが複数言語を使用可能な場合    </td></tr>
-<tr><th>IME切替        </th><td> [Meta]+[Space]  </td><td> 複数のIMEを使用可能な場合</br>[Meta]は[Windows]キーまたは[Command]キー<br>(Android 7以降) </td></tr>
+Androidのショートカットキーでレイアウト、言語、IMEを切り替えることができます。<br />
+<table><tr><th>レイアウト切替 </th><td> [Ctrl]+[Space] &nbsp;</td><td> 複数レイアウトを選択している場合 </td></tr>
+<tr><th>言語切替 &nbsp; &nbsp; &nbsp; </th><td> [Shift]+[Space] </td><td> IMEが複数言語を使用可能な場合 &nbsp; &nbsp;</td></tr>
+<tr><th>IME切替 &nbsp; &nbsp; &nbsp; &nbsp;</th><td> [Meta]+[Space] &nbsp;</td><td> 複数のIMEを使用可能な場合</br>[Meta]は[Windows]キーまたは[Command]キー<br>(Android 7以降) </td></tr>
 </table>
-
+<br />
 <h2 id="j41"><a href="#h41" title="h41" name="h41" id="h41">■</a> 入力文字種の切替</h2>
-<p>多くのIMEでは日本語/英数の言語切替をショートカットキーで行えます。</p>
-
-<p>日本語/英数入力切替</p>
-<table><tr><th>Gboard           </th><td> [半/全]<br>[Shift]＋[Space]</br>(「日本語」と「英語」両方の言語登録が必要) </td></tr>
+多くのIMEでは日本語/英数の言語切替をショートカットキーで行えます。<br />
+<br />
+日本語/英数入力切替<br />
+<table><tr><th>Gboard &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </th><td> [半/全]<br>[Shift]＋[Space]</br>(「日本語」と「英語」両方の言語登録が必要) </td></tr>
 <tr><th>Google日本語入力 </th><td> [半/全]<br>[Alt]+[`]<br>[Ctrl]+[Shift] </td></tr>
-<tr><th>ATOK             </th><td> [半/全]<br>[Alt]＋[Space]<br>[変換]    </td></tr>
-<tr><th>Wnn keyboard lab </th><td> [半/全]<br>[Shift]＋[Space]             </td></tr>
+<tr><th>ATOK &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </th><td> [半/全]<br>[Alt]＋[Space]<br>[変換] &nbsp; &nbsp;</td></tr>
+<tr><th>Wnn keyboard lab </th><td> [半/全]<br>[Shift]＋[Space] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td></tr>
 </table>
-<p>※ Androidのバージョンによって動作が異なることがあります</p>
-
-<p>物理キーボードにファンクションキーがない、あるいはfnキーと同時押しで面倒な場合でも、IMEによっては文字種変換をショートカットキーで行えます。</p>
-
-<p>文字種変換 (Gboard/Google日本語入力/ATOK)</p>
+※ Androidのバージョンによって動作が異なることがあります<br />
+<br />
+物理キーボードにファンクションキーがない、あるいはfnキーと同時押しで面倒な場合でも、IMEによっては文字種変換をショートカットキーで行えます。<br />
+<br />
+文字種変換 (Gboard/Google日本語入力/ATOK)<br />
 <table><tr><th>ひらがな変換 </th><td> [Ctrl]+[u] </td></tr>
 <tr><th>カタカナ変換 </th><td> [Ctrl]+[i] </td></tr>
-<tr><th>半角変換     </th><td> [Ctrl]+[o] </td></tr>
-<tr><th>全角無変換   </th><td> [Ctrl]+[p] </td></tr>
+<tr><th>半角変換 &nbsp; &nbsp; </th><td> [Ctrl]+[o] </td></tr>
+<tr><th>全角無変換 &nbsp; </th><td> [Ctrl]+[p] </td></tr>
 </table>
-
-<p>Gboard/Google日本語入力</p>
+<br />
+Gboard/Google日本語入力<br />
 <table><tr><th>英数変換 </th><td> [Ctrl]+[t] </td></tr>
 </table>
-<p>※ Gboard/Google日本語入力で「物理キーボードの[Alt]キーで絵文字を表示」するように設定していた場合、[Alt]キーによる絵文字入力キーボードの表示中に英数直接入力が行なえます。(正式な仕様ではない可能性があります)</p>
-
-<p>ATOK</p>
+※ Gboard/Google日本語入力で「物理キーボードの[Alt]キーで絵文字を表示」するように設定していた場合、[Alt]キーによる絵文字入力キーボードの表示中に英数直接入力が行なえます。(正式な仕様ではない可能性があります)<br />
+<br />
+ATOK<br />
 <table><tr><th>英数変換(日本語配列) </th><td> [Ctrl]＋[@] </td></tr>
-<tr><th>英数変換(英語配列)   </th><td> [Ctrl]＋'[' </td></tr>
+<tr><th>英数変換(英語配列) &nbsp; </th><td> [Ctrl]＋'[' </td></tr>
 </table>
 </div></div>
 <div class="section entry" id="e5"><h1><a href="#t5" title="t5" name="t5" id="t5">■ 本アプリについて:<a name="about"></a></a></h1>
 <div class="textBody">
-<p>このアプリはオープンソースソフトウェアです。<br />
-<a href="https://github.com/shiftrot/caps2ctrl">https://github.com/shiftrot/caps2ctrl</a></p>
+このアプリはオープンソースソフトウェアです。<br />
+<a href="https://github.com/shiftrot/caps2ctrl">https://github.com/shiftrot/caps2ctrl</a>
 </div></div>
 <p class="topicPath"><a href="javascript:history.back()" title="Prev">&lt;&lt;&nbsp;Prev</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#header" title="PageTop">PageTop</a></p>
 </div>

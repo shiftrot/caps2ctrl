@@ -11,20 +11,20 @@ key ZENKAKU_HANKAKU {
 
 # https://android.googlesource.com/platform/frameworks/base/+/cd92588/data/keyboards/Generic.kl
 
-map key 1   ESCAPE            # ESCAPE
-map key 41  ZENKAKU_HANKAKU   # GRAVE
-map key 58  CTRL_LEFT         # CAPS_LOCK
-map key 29  CAPS_LOCK         # CTRL_LEFT
+map key 1   GRAVE             # ESCAPE
+map key 41  ESCAPE            # GRAVE
+map key 58  CAPS_LOCK         # CAPS_LOCK
+map key 29  CTRL_LEFT         # CTRL_LEFT
 map key 127 MENU              # MENU
 
 map key 92  HENKAN            # HENKAN
 map key 93  ZENKAKU_HANKAKU   # KATAKANA_HIRAGANA
 map key 94  MUHENKAN          # MUHENKAN
-map key 100 ALT_RIGHT         # ALT_RIGHT
+map key 100 ZENKAKU_HANKAKU   # ALT_RIGHT
 map key 122 ZENKAKU_HANKAKU   # KANA
 map key 123 MUHENKAN          # EISU
 map key 125 META_LEFT         # META_LEFT
-map key 126 ZENKAKU_HANKAKU   # META_RIGHT
+map key 126 META_RIGHT        # META_RIGHT
 
 # YEN -> GRAVE
 key YEN {
