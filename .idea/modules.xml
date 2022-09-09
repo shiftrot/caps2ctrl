@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/caps2ctrl.iml" filepath="$PROJECT_DIR$/caps2ctrl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.iml" filepath="$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/jpkcm/caps2ctrl.jpkcm.unitTest.iml" />
     </modules>
   </component>
 </project>

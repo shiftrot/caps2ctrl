@@ -1,15 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
     defaultConfig {
         applicationId "jp.kcm.thumbctrl"
-
-        minSdkVersion 16
-        targetSdkVersion 31
-        versionCode 37
-        versionName "1.7"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        compileSdk 33
+        targetSdk 33
+        minSdk 16
+        versionCode 1039
+        versionName "1.8"
     }
     buildTypes {
         release {
@@ -18,19 +16,16 @@ android {
         }
     }
     productFlavors {
-        flavorDimensions "default"
+        flavorDimensions = ["appType"]
         basic {
-            dimension "default"
-        }
-        beta {
-            dimension "default"
-            setVersionCode(1037)
+            dimension "appType"
         }
         tcen {
-            dimension "default"
+            dimension "appType"
             setApplicationId("jp.kcm.thumbctrl.en.layout")
         }
     }
+    namespace 'jp.kcm.thumbctrl'
 }
 
 dependencies {
@@ -38,6 +33,6 @@ dependencies {
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0-alpha4', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     testImplementation 'junit:junit:4.13.2'
 }

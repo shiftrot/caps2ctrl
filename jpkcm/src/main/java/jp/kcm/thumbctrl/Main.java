@@ -27,6 +27,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Main extends AppCompatActivity {
 
@@ -71,12 +72,12 @@ public class Main extends AppCompatActivity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest request) {
                 String url = request.getUrl().toString();
-                return overrideUrlLoading(webView, url);
+                return overrideUrlLoading(url);
             }
 
             @Override
             public boolean shouldOverrideUrlLoading(WebView webView, String url) {
-                return overrideUrlLoading(webView, url);
+                return overrideUrlLoading(url);
             }
         });
         setButtonListener();
@@ -187,10 +188,8 @@ public class Main extends AppCompatActivity {
         if (mOnBackPressedCallback != null) mOnBackPressedCallback.setEnabled(enabled);
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
             OnBackInvokedDispatcher invokedDispatcher = getOnBackInvokedDispatcher();
-            if (invokedDispatcher != null) {
-                invokedDispatcher.unregisterOnBackInvokedCallback(mOnBackInvokedCallback);
-                if (enabled) invokedDispatcher.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT, mOnBackInvokedCallback);
-            }
+            invokedDispatcher.unregisterOnBackInvokedCallback(mOnBackInvokedCallback);
+            if (enabled) invokedDispatcher.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT, mOnBackInvokedCallback);
         }
     }
 
@@ -243,7 +242,8 @@ public class Main extends AppCompatActivity {
         }
         try {
             File html = new File(url);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(html), "UTF-8"));
+            BufferedReader reader;
+            reader = new BufferedReader(new InputStreamReader(new FileInputStream(html), "UTF-8"));
             StringBuilder buffer = new StringBuilder();
             String str;
             while ((str = reader.readLine()) != null) {
@@ -254,12 +254,12 @@ public class Main extends AppCompatActivity {
             webView.loadDataWithBaseURL("file://" + url, data, "text/html", "UTF-8", prev);
             return true;
         } catch (Exception e) {
-            Log.d("WebViewAcitivity", e.getMessage());
+            Log.d("WebViewAcitivity", Objects.requireNonNull(e.getMessage()));
         }
         return false;
     }
 
-    private boolean overrideUrlLoading(WebView view, String url) {
+    private boolean overrideUrlLoading(String url) {
         if (url.startsWith("file:")) {
             return openSettings(url);
         }

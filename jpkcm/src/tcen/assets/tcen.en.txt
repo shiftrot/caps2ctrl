@@ -2,6 +2,8 @@
 This application adds a keyboard layout (English, US, qwerty) which changed "Caps Lock" to "Ctrl" for the physical keyboard.
 Also add a keyboard layout to swap "ESC" and "\`".
 
+<strong> Android 14 and later:&<br />In most cases, modifier keys can be changed via "Android Settings" without using the "Keyboard Layout" of this app.</strong>
+
 - English (US)
 |:#[CapsLock]:|:#Left Ctrl:|:#[ESC]-[\`]:|:#Menu key :|
 |:           :|:          :|:           :|:          :|
@@ -28,8 +30,8 @@ It is also available from the following link =>
 &&Input test text area.
 &&</textarea>
 
-## &<font color="red">!!! Caution !!!&</font>
-<strong>If "Choose Keyboard Layout" does not exist, please contact your Android device customer support. </strong>(Your Android device prohibits changing settings. So this application can not change it)
+## &<font color="red">!!! Important !!!&</font>
+<strong>If "Choose Keyboard Layout" does not exist, please contact your Android device customer support. </strong>&<br />Your Android device prohibits changing settings.
 
  * Depending on the Android version, the setting location may be different or layout setting may be required for each keyboard application.
  * This software uses 'User installable keymap' (Android 4.1 and up).
