@@ -9,16 +9,17 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
-
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.window.OnBackInvokedCallback;
+import android.window.OnBackInvokedDispatcher;
+
+import androidx.activity.OnBackPressedCallback;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -37,6 +38,8 @@ public class Main extends AppCompatActivity {
     private PrefValue mPrefValue;
     private final String PREFKEY_FONTSIZE = "fontsize";
     private final Handler mHandler = new Handler();
+    private OnBackPressedCallback mOnBackPressedCallback;
+    private OnBackInvokedCallback mOnBackInvokedCallback;
 
     @SuppressLint({"SetJavaScriptEnabled", "NewApi"})
     @Override
@@ -77,6 +80,8 @@ public class Main extends AppCompatActivity {
             }
         });
         setButtonListener();
+        setOnBackPressedCallback();
+        setOnBackPressedCallbackEnabled(true);
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
@@ -151,6 +156,44 @@ public class Main extends AppCompatActivity {
         }
     };
 
+    private void setOnBackPressedCallback() {
+        if (mOnBackPressedCallback == null) {
+            mOnBackPressedCallback = new OnBackPressedCallback(false) {
+                @Override
+                public void handleOnBackPressed() {
+                    if (mWebView.canGoBack()) {
+                        mBack = true;
+                        mWebView.goBack();
+                    } else {
+                        finish();
+                    }
+                }
+            };
+        }
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+            if (mOnBackInvokedCallback == null) {
+                mOnBackInvokedCallback = () -> {
+                    if (mOnBackPressedCallback != null && mOnBackPressedCallback.isEnabled()) {
+                        mOnBackPressedCallback.handleOnBackPressed();
+                    }
+                };
+            }
+        } else {
+            getOnBackPressedDispatcher().addCallback(this, mOnBackPressedCallback);
+        }
+    }
+
+    private void setOnBackPressedCallbackEnabled(boolean enabled) {
+        if (mOnBackPressedCallback != null) mOnBackPressedCallback.setEnabled(enabled);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+            OnBackInvokedDispatcher invokedDispatcher = getOnBackInvokedDispatcher();
+            if (invokedDispatcher != null) {
+                invokedDispatcher.unregisterOnBackInvokedCallback(mOnBackInvokedCallback);
+                if (enabled) invokedDispatcher.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT, mOnBackInvokedCallback);
+            }
+        }
+    }
+
     final Runnable mFinish = new Runnable() {
         public void run() {
             mWebView.stopLoading();
@@ -186,18 +229,6 @@ public class Main extends AppCompatActivity {
                 })
                 .setNegativeButton(android.R.string.cancel, null)
                 .show();
-    }
-
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if (mWebView.canGoBack()) {
-                mBack = true;
-                mWebView.goBack();
-                return true;
-            }
-        }
-        return super.onKeyDown(keyCode, event);
     }
 
     static public void setRepeatInterval(int initial, int normal) {
