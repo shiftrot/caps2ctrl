@@ -3,7 +3,6 @@ package jp.kcm.thumbctrl;
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -163,11 +162,9 @@ public class Main extends AppCompatActivity {
         final AlertDialog.Builder b = new AlertDialog.Builder(this);
         b.setIcon(android.R.drawable.ic_dialog_alert);
         b.setMessage(R.string.query_quit);
-        b.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                dialog.dismiss();
-                mHandler.post(mFinish);
-            }
+        b.setPositiveButton(android.R.string.yes, (dialog, id) -> {
+            dialog.dismiss();
+            mHandler.post(mFinish);
         });
         b.setNegativeButton(android.R.string.no, null);
         b.show();
@@ -177,17 +174,14 @@ public class Main extends AppCompatActivity {
         String[] items = {getString(R.string.scroll_to_top), getString(R.string.scroll_to_bottom), getString(R.string.quit)};
         final int quit = items.length - 1;
         new AlertDialog.Builder(mWebView.getContext())
-                .setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                        if (which == quit) {
-                            mHandler.post(mFinish);
-                        } else if (which == 0) {
-                            mWebView.pageUp(true);
-                        } else if (which == 1) {
-                            mWebView.pageDown(true);
-                        }
+                .setSingleChoiceItems(items, -1, (dialog, which) -> {
+                    dialog.dismiss();
+                    if (which == quit) {
+                        mHandler.post(mFinish);
+                    } else if (which == 0) {
+                        mWebView.pageUp(true);
+                    } else if (which == 1) {
+                        mWebView.pageDown(true);
                     }
                 })
                 .setNegativeButton(android.R.string.cancel, null)
